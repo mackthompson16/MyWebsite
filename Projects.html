@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Mack Thompson | Projects </title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="slider.js" defer></script>
+       
+    </head>
+    <body>
+
+        <div id="header"></div>
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+        </script>
+
+
+<div class="project-slider">
+    <div class="projects">
+        <div class = "project">
+            <div class="tabs text-effect">
+   
+                <a href="Camp.html" target="_blank">
+                    <h2>Bwh Sports Camp</h2>
+                </a>
+            </div>
+                <img src="images/camp.jpg" height="300">
+          
+        </div>
+       
+        <div class = "project">
+            <div class="tabs text-effect">
+          
+                <a href="Meteo.html" target="_blank">
+                    <h2>Mars Meteo</h2>
+                </a>  
+            </div>
+            <img src="images/meteo.PNG" height="300">
+           
+        </div>
+        <div class = "project">
+
+        
+            <div class="tabs text-effect">
+                <a href="Projects/html" target="_blank">
+                 <h1>Email Chat Bot</h1>
+                </a>
+            </div>  
+            
+            <img src="images/Email-Sample.png" height="200">
+        
+            
+        
+        </div>
+    </div>
+
+    <div class="arrow left-arrow" onclick="prevSlide()">&#10094;</div>
+    <div class="arrow right-arrow" onclick="nextSlide()">&#10095;</div>
+</div>
+
+        
+            
+      
+
+        </div>
+        <div id="footer"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+            </script>
+
+
+
+
+            <script>
+               let currentIndex = 0;
+const projects = document.querySelector('.projects'); 
+const projectItems = document.querySelectorAll('.project'); 
+const totalProjects = projectItems.length; 
+
+// Clone the first and last projects for the infinite loop illusion
+projects.appendChild(projectItems[0].cloneNode(true)); // Clone first project and append to the end
+projects.insertBefore(projectItems[totalProjects - 1].cloneNode(true), projectItems[0]); // Clone last project and insert at the start
+
+// Adjust the initial position to show the first actual project
+projects.style.transform = `translateX(-100%)`;
+
+// Add transitionend event listener once to handle infinite loop transitions
+projects.addEventListener('transitionend', () => {
+    if (currentIndex >= totalProjects) {
+        currentIndex = 0; // Reset to the first slide
+        projects.style.transition = 'none'; // Disable transition to avoid visual glitch
+        projects.style.transform = `translateX(-100%)`; // Jump back to the first actual slide
+        setTimeout(() => projects.style.transition = 'transform 0.5s ease', 0); // Re-enable transition
+    } else if (currentIndex < 0) {
+        currentIndex = totalProjects - 1; // Reset to the last slide
+        projects.style.transition = 'none'; // Disable transition to avoid visual glitch
+        projects.style.transform = `translateX(-${totalProjects * 100}%)`; // Jump to the last actual slide
+        setTimeout(() => projects.style.transition = 'transform 0.5s ease', 0); // Re-enable transition
+    }
+});
+
+function showSlide(index) {
+    currentIndex = index; // Update the current index
+    const slideWidth = projectItems[0].offsetWidth; // Width of each slide
+    const totalWidth = -slideWidth * (index + 1); // Calculate the total offset including the clones
+    projects.style.transform = `translateX(${totalWidth}px)`; // Slide to the calculated position
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+            </script>
+
+    </body>
+
+
+</html>

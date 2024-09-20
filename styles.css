@@ -1,0 +1,188 @@
+
+
+
+@font-face {
+    font-family: reg;
+    src: url(images/Roboto/Roboto-Light.ttf);
+  }
+  @font-face {
+    font-family: bold;
+    src: url(images/Roboto/Roboto-Bold.ttf);
+  }
+  
+ h1{
+font-family:bold;
+
+ }
+body{
+
+    color: white;
+    background-color:black;
+    font-family: reg;
+   
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+    padding-top:20px;
+    margin-bottom: 1em;
+    max-width: 600px;
+    margin: 0 auto; /* Centers the paragraph */
+}
+h3{
+    padding-top:20px;
+text-align: center;
+}
+
+
+footer {
+    background-color:black;
+    color:#fff;
+    padding:10px;
+    text-align: center;
+   
+}
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.social-icons{
+    display:flex;
+    justify-content: center;
+}
+.social-icons a{
+    
+    padding: 10px;
+    background-color:white;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+
+
+header{
+    
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+.project-slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .projects {
+    display: flex;
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+  }
+  
+  .project {
+    
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+ 
+  }
+
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.arrow.left-arrow {
+    left: 20px; 
+}
+
+.arrow.right-arrow {
+    right: 20px; 
+}
+
+.arrow:hover {
+    transform: translate(-50%, -50%) scale(1.5); 
+    color: darkgrey;
+}
+
+.tabs {
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    padding: 0; 
+    margin: 0; 
+}
+
+.tabs a {
+    color: white;
+    text-decoration: none;
+    font-family: bold;
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.list{
+
+    flex-direction:column;
+}
+.text-effect a{
+
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.text-effect a:hover{
+
+    transform: scale(1.2); 
+    color: darkgrey;
+
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Ensure the video is behind other content */
+    object-fit: cover; /* Ensure the video covers the entire background */
+}
+
+.content {
+
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent to see video behind */
+    color:white;
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 50vh; /* Ensure it covers at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Additional padding to create a scrolling effect */
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
