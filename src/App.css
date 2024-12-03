@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  background-color: #1d1f24;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Use min-height instead of height */
+  overflow: visible; /* Ensure scrolling works */
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12vh; /* Leave space for the fixed header */
+}
+
+/* Header */
+.App-header {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 2vh 0;
+  width: 100vw; /* Full-width header */
+  position: fixed; /* Sticks to the top */
+  z-index: 10;
+}
+
+.side-menu {
+  position: fixed;
+  top: 15vh; /* Ensure it starts below the header */
+  right: 0;
+  width: 10vw; /* Width of the side menu */
+  height: calc(100vh - 12vh); /* Full height minus header height */
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; /* Evenly space buttons within the container */
+  padding: 0; /* Remove extra padding */
+  z-index: 5;
+  overflow-y: auto; /* Allow scrolling if content exceeds container height */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: #cccccc; /* Subtle text color */
+  font-size: 1.5vh;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.5vh 0; /* Reduce padding for compact layout */
+  transition: color 0.3s ease;
+}
+
+.menu-button:hover {
+  color: #ffffff; /* Highlight on hover */
+}
+
+
+
+/* Project Container */
+
+
+
+/* Projects Container */
+.projects {
+  display: flex;
+  flex-direction: column;
+  
+  width: calc(100vw - 10vw); /* Subtract the side menu's width */
+  padding: 2vh;
+  align-items: center;
+  margin-right: 10vw; /* Ensure no overlap with the side menu */
+}
+
+/* Project Boxes */
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15vh;
+  margin-top: 15vh;
+  width: 100%; /* Ensure projects take up the full width of the `.projects` container */
+}
+
+.project.right {
+  flex-direction: row-reverse; 
+}
+
+.project-content.left {
+  justify-content: flex-start; 
+  text-align: left;
+  max-width: 40%;
+  flex: 1;
+}
+
+.project-content.right {
+  justify-content: flex-end; 
+  text-align: right;
+  max-width: 40%;
+  flex: 1;
+}
+.project-content h2 {
+  font-size: 2.5vh;
+  margin-bottom: 1vh;
+  color: #ffffff; /* Brighter header text */
+}
+
+.project-content p {
+  
+  font-size: 1.8vh;
+  line-height: 1.5;
+  margin-bottom: 2vh;
+  color: #dcdcdc; /* Softer paragraph text */
+}
+
+.project-content a {
+  display: inline-block;
+  padding: 1vh 2vw;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0.5vw;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-content a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Image Box */
+.project-image {
+  flex: 1;
+  max-width: 40%; /* Matches description size */
+  text-align: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1vw;
+  border: 0.2vw solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Depth effect */
+}
