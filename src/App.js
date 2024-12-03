@@ -149,7 +149,7 @@ const projects = [
 return (
   <div className="App">
     <header className="App-header">
-      <h1>I'm Mack,</h1>
+      <h1>I'm Mack</h1>
       <p>a Computer Science Student.</p>
     </header>
 
