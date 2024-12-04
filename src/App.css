@@ -17,7 +17,6 @@ body {
   flex-direction: row;
 }
 
-
 .App-header {
   display: flex;
   justify-content: center; /* Horizontally center */
@@ -195,8 +194,8 @@ h1, p{
 /* Image Box */
 .project-image {
   flex: 1;
-  max-width: 40%; /* Matches description size */
   text-align: center;
+  max-width: 50%;
 }
 
 .project-image img {
@@ -205,4 +204,66 @@ h1, p{
   border-radius: 1vw;
   border: 0.2vw solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Depth effect */
+}
+
+/* Styles for the Show Menu button */
+.show-menu-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  background-color: #1d1f24;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+/* When the menu is visible */
+.side-menu.visible {
+  transform: translateX(-10vw); /* Slide in */
+  opacity: 1;
+}
+
+/* When the menu is hidden */
+.side-menu.hidden {
+  transform: translateX(0); /* Slide out */
+  opacity: 0;
+}
+
+/* Projects layout for smaller screens */
+@media (max-width: 700px) {
+  .projects {
+    flex-direction: column;
+    width: 100vw;
+    margin-right: 0;
+  }
+
+  .project.right, .project.left {
+    flex-direction: column; /* Align vertically */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+  }
+
+  .project-image {
+    margin-top: 15vh;
+    max-width: 80%;
+  }
+
+  .project-content.left, .project-content.right{
+    text-align: center;
+    max-width: 80%;
+  }
+  .side-menu {
+    background-color: #1d1f24;
+    width: 20vw; 
+  }
+
+  .side-menu.visible {
+    transform: translateX(-10vw); /* Slide in */
+    opacity: 0.7;
+  }
 }

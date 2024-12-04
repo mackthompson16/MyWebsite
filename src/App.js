@@ -1,5 +1,6 @@
 
 import Project from './Project';
+import { CiMenuFries } from "react-icons/ci";
 
 import React, { useRef, useState, useEffect,  useCallback} from "react";
 import "./App.css";
@@ -13,6 +14,27 @@ import HS from './images/hs.jpg'
 import CPT from './images/cpt.jpg'
 
 const App = () => {
+
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+
+  // Track window resizing to detect mobile layouts
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 700);
+      if (window.innerWidth >= 700) {
+        setIsMenuVisible(false); // Hide menu when resizing back to larger screens
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuVisible(!isMenuVisible);
+  };
+
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -68,13 +90,11 @@ const App = () => {
   };
 
 
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
-      // Show menu when scrolling down past 100px
+    if(!isMobile){
       if (scrollPosition > 100 && !isMenuVisible) {
         setIsMenuVisible(true);
       }
@@ -84,9 +104,9 @@ const App = () => {
         setIsMenuVisible(false);
       }
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  }
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMenuVisible]);
 
@@ -154,6 +174,15 @@ return (
     </header>
 
     <div className="page">
+
+    {isMobile && (
+        <button
+          className="show-menu-button"
+          onClick={toggleMenu}
+        >
+        <CiMenuFries />
+        </button>
+      )}
      
       <div className={`side-menu ${isMenuVisible ? "visible" : "hidden"}`}>
          
