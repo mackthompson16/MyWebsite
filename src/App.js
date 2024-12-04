@@ -18,12 +18,12 @@ const App = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
 
-  // Track window resizing to detect mobile layouts
+  
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 700);
       if (window.innerWidth >= 700) {
-        setIsMenuVisible(false); // Hide menu when resizing back to larger screens
+        setIsMenuVisible(false); 
       }
     };
 
@@ -91,10 +91,14 @@ const App = () => {
 
 
   useEffect(() => {
+    
+
     const handleScroll = () => {
+      console.log(isMobile)
       const scrollPosition = window.scrollY;
 
-    if(!isMobile){
+    if(!isMobile)
+    {
       if (scrollPosition > 100 && !isMenuVisible) {
         setIsMenuVisible(true);
       }
@@ -103,10 +107,11 @@ const App = () => {
       if (scrollPosition <= 100 && isMenuVisible) {
         setIsMenuVisible(false);
       }
-    };
-  
+    }
+  };
+    
     window.addEventListener("scroll", handleScroll);
-  }
+  
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMenuVisible]);
 
