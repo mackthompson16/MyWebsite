@@ -23,7 +23,7 @@ body {
   align-items: center; /* Vertically center */
   height: 100vh; /* Takes most of the viewport height */
   color: white;
-  
+  font-size: larger;
   text-align: center;
   flex-direction: column;
 }
