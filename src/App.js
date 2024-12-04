@@ -16,19 +16,23 @@ import CPT from './images/cpt.jpg'
 const App = () => {
 
   const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 700);;
 
-  
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 700);
-      if (window.innerWidth >= 700) {
-        setIsMenuVisible(false); 
-      }
+      const isCurrentlyMobile = window.innerWidth < 700;
+      setIsMobile(isCurrentlyMobile);
+      console.log('Updated isMobile:', isCurrentlyMobile);
     };
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+
+    // Set initial state to ensure correctness
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   const toggleMenu = () => {
@@ -91,7 +95,6 @@ const App = () => {
 
 
   useEffect(() => {
-    
 
     const handleScroll = () => {
       console.log(isMobile)
@@ -113,7 +116,7 @@ const App = () => {
     window.addEventListener("scroll", handleScroll);
   
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isMenuVisible]);
+  }, [isMenuVisible, isMobile]);
 
   
 const projects = [

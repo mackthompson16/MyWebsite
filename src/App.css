@@ -210,9 +210,10 @@ h1, p{
 .show-menu-button {
   position: fixed;
   top: 10px;
+  margin-bottom: 5px;
   right: 0;
   z-index: 20;
-  background-color: #1d1f24;
+  background: none;
   color: #ffffff;
   border: none;
   padding: 10px 15px;
