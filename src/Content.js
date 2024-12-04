@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
-const Project = ({ title, description, link, image, isLeft, button }) => {
+const Content = ({ title, description, link, image, isLeft, button,type }) => {
+
   useEffect(() => {
     const fadeInElements = document.querySelectorAll(".fade-in");
 
@@ -23,21 +24,39 @@ const Project = ({ title, description, link, image, isLeft, button }) => {
   }, []); // Empty dependency array ensures this runs only once
 
   return (
-    <div className={`project ${isLeft ? 'left' : 'right'}`}>
-      <div className={`project-content ${isLeft ? 'left' : 'right'}`}>
-        <h1 class="fade-in">{title}</h1>
+    <div className={`content ${type==='special' ?  'special':''} ${isLeft ? 'left' : 'right'}`}>
+      <div className={`content-content ${type==='special' ?  'special':''} ${isLeft ? 'left' : 'right'}`}>
+        
+        {type!=='special'&& (<h1 class="fade-in">{title}</h1>)}
+        
+        {type==='special'&&
+        <div className="special">
+          {title!=='Contact'&&(<h1>{title}</h1>)}
+          <p>{description}</p>
+        </div>
+        }
+        {type !== 'special'&& (
         <p class="fade-in">{description}</p>
+        )}
         {button && (
           <a class="fade-in" href={link} target="_blank" rel="noopener noreferrer">
           {button}
-        </a>
+          </a>
+      
         )}
+      
+      
       </div>
-      <div className="project-image">
+        
+      {image && (
+      <div className="content-image">
+        
         <img class="fade-in" src={image} alt={title} />
+        
       </div>
+      )}
     </div>
   );
 };
 
-export default Project;
+export default Content;
