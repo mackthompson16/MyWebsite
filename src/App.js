@@ -148,9 +148,9 @@ const contents = [
     description: `The languages I am most comfortable with are JavaScript and Python. I have used JavaScript for my personal projects and python for competetive programming. I am also comfortable using SQL and React. I have experience with fetching API's and managing a google cloud project / instance server with one of my projects as well. Other languages I have used for coursework are C++ in my algorithms class and Ruby in my programming languages class where we designed components for a simple compiler. `
   },
 
-  { title: 'Projects',
-    type: 'special',
-    description: '',
+  { 
+  type:'title',
+  title:'Projects'
   },
 
   {
@@ -219,6 +219,7 @@ return (
          
 
         {contents.map((content, index) => (
+         
 
           content.type !== 'project' && (
            <button
@@ -244,7 +245,14 @@ return (
             key={index}
             ref={(el) => (contentRefs.current[index] = el)} 
             >
-              
+            {content.type==='title' && (
+
+            <header className="App-header" style={{marginTop: 0,height:'35vh'}}>
+              <h1>PROJECTS</h1>
+            </header>
+            )}
+
+            {content.type!=='title'&&(
             <Content
             key={index}
             title={content.title}
@@ -255,6 +263,7 @@ return (
             type={content.type}
             isLeft={index % 2 === 0} // Alternates between left and right
           />   
+          )}
           </div>
         ))}
         <h2>Email mackthompson16@gmail.com with inqueries</h2>
