@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+
 const Content = ({ title, description, link, image, isLeft, button,type }) => {
 
   useEffect(() => {
@@ -24,26 +25,31 @@ const Content = ({ title, description, link, image, isLeft, button,type }) => {
   }, []); // Empty dependency array ensures this runs only once
 
   return (
-    <div className={`content ${type==='special' ?  'special':''} ${isLeft ? 'left' : 'right'}`}>
+    <div className={`content ${type==='special' ?  'special':''} ${isLeft ? 'left' : 'right'} ${type==='last'? 'last':''}`}>
       <div className={`content-content ${type==='special' ?  'special':''} ${isLeft ? 'left' : 'right'}`}>
         
         {type!=='special'&& (<h1 class="fade-in">{title}</h1>)}
         
         {type==='special'&&
-        <div className="special">
-          {title!=='Contact'&&(<h1>{title}</h1>)}
+
+        <div className='special'>
+          <h1>{title}</h1>
           <p>{description}</p>
         </div>
         }
         {type !== 'special'&& (
+        
         <p class="fade-in">{description}</p>
         )}
+
         {button && (
+           <div className="button">
           <a class="fade-in" href={link} target="_blank" rel="noopener noreferrer">
           {button}
           </a>
-      
+          </div>
         )}
+       
       
       
       </div>
@@ -55,6 +61,8 @@ const Content = ({ title, description, link, image, isLeft, button,type }) => {
         
       </div>
       )}
+
+
     </div>
   );
 };

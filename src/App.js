@@ -1,7 +1,7 @@
 
 import Content from './Content';
 import { CiMenuFries } from "react-icons/ci";
-
+import { IoLogoGithub } from "react-icons/io";
 import React, { useRef, useState, useEffect,  useCallback} from "react";
 import "./App.css";
 
@@ -167,7 +167,7 @@ const contents = [
     type: 'project',
     description: 'To learn database management and frontend backend communication, I created a social calendar sharing platform. Users can create and manage their schedule, invite friends, and schedule group events. Users will get live updates for friend and meeting invites. I coded this in Java Script and used SQLITE3 for my data, WebSocket for live updates, and react for the calendar component and some other features.',
     link: 'https://github.com/mackthompson16/WeCal',
-    button: 'view project',
+    button: 'View Project',
     image: WECAL,
   },
 
@@ -176,16 +176,16 @@ const contents = [
     type: 'project',
     description: ` To learn about cloud computing, I created a bot that listens to incoming messages, reads a pre-written context file, and responds to them based on OpenAI's chat completion API. I used google cloud console to host the script, and a pub/sub notifcation system to listen for incoming messages. I coded this in python.`,
     link: 'https://github.com/mackthompson16/EmailBot',
-    button: 'view project',
+    button: 'View Project',
     image: EMAIL,
   },
 
   {
     title: 'Freshman Hackathon',
     type: 'project',
-    description: `My First group project using GitHub (with many more to come) was a simple react project webscrapes from a dataset on Nasa's Mars Rovers, and displays them on our website to create a mars weather app. This taught us a lot about managing group projects, fetching apis, and introduced us to frontend programming languages.`,
+    description: `My First group project using GitHub (with many more to come) was a simple react project that webscrapes from a dataset on Nasa's Mars Rovers, and displays them on our website to create a mars weather app. This taught us a lot about managing group projects, fetching apis, and introduced us to frontend programming languages.`,
     link: 'https://github.com/eli-standard/Mars-Meteo',
-    button: 'view project',
+    button: 'View Project',
     image: METEO,
   },
 
@@ -193,17 +193,8 @@ const contents = [
     title: 'Early Life',
     description: `Born in Atlanta in 2004, I am the middle of an older sister who attends Skidmore College, and a younger brother in ninth grade. I graduated from Westminster highschool in 2023. I was heavily involved in athletics, mainly the wrestling team where I won region champion in my division senior year. I also was the president and co-founder of the coding club, where I prepared tech talks on related topics weekly.`,
     image: HS,
-    type:'reg'
+    type:'last'
   },
-
-  {title: 'Contact',
-  description: 'Email me mackthompson16@gmail.com ',
-  button: 'Github',
-  link: 'https://github.com/mackthompson16',
-  type:'special'
-  }
-
-
 
 ];
 return (
@@ -266,6 +257,10 @@ return (
           />   
           </div>
         ))}
+        <h2>Email mackthompson16@gmail.com with inqueries</h2>
+        <a style={{fontSize:50,  textDecoration: 'none', color:'white'}} href="https://github.com/mackthompson16/MyWebsite" target="_blank" rel="noopener noreferrer">
+           <IoLogoGithub />
+        </a>
       </div>
     </div>
   </div>
