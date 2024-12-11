@@ -1,10 +1,11 @@
-** PORTFOLIO WEBSITE **
+#### PORTFOLIO WEBSITE 
 
-## React Design with Dynamic Features for Smaller Viewports (Mobile)
+# React Design with Dynamic Features for Smaller Viewports (Mobile)
 
 ---
 
-## Project Overview
+## Overview
+
 This is a portfolio website built with React, designed to showcase projects and skills while providing a smooth and modern user experience. It includes features such as a custom favicon, a custom domain name, animated images, and mobile optimization for smaller viewports.
 
 ---
