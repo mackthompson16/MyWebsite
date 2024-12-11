@@ -141,13 +141,6 @@ const contents = [
     image: CPT,
   },
 
-
-  {
-    title: 'Tech Stack',
-    type: 'special',
-    description: `The languages I am most comfortable with are JavaScript and Python. I have used JavaScript for my personal projects and python for competetive programming. I am also comfortable using SQL and React. I have experience with fetching API's and managing a google cloud project / instance server with one of my projects as well. Other languages I have used for coursework are C++ in my algorithms class and Ruby in my programming languages class where we designed components for a simple compiler. `
-  },
-
   { 
   type:'title',
   title:'Projects'
@@ -245,12 +238,7 @@ return (
             key={index}
             ref={(el) => (contentRefs.current[index] = el)} 
             >
-            {content.type==='title' && (
-
-            <header className="App-header" style={{marginTop: 0,height:'35vh'}}>
-              <h1>PROJECTS</h1>
-            </header>
-            )}
+            {content.type==='title' && (<div className="title"><h1>PROJECTS</h1></div>)}
 
             {content.type!=='title'&&(
             <Content

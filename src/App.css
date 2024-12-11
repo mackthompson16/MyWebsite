@@ -59,6 +59,11 @@ body {
   animation-delay: 0.5s; 
 }
 
+.title{
+  margin-bottom: 10vh;
+  font-size:xx-large;
+
+}
 
 @keyframes reveal {
   from {
