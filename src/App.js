@@ -46,7 +46,7 @@ const App = () => {
     const viewportHeight = window.innerHeight;
     const centerY = viewportHeight / 2;
 
-    let closestIndex = null;
+    let closestIndex = activeIndex;
     let closestDistance = Infinity;
 
     contentRefs.current.forEach((content, index) => {
@@ -63,13 +63,14 @@ const App = () => {
       }
     });
 
-    if (closestIndex !== activeIndex ) {
-      if(closestIndex === 4 ||closestIndex === 5 ||closestIndex === 6 ||closestIndex === 7){
-        setActiveIndex(3)
-      }else {
+    if (closestIndex !== activeIndex) 
+    {
+      if (closestIndex > 1 && closestIndex < 7){
+        setActiveIndex(2)
+      } else {
       setActiveIndex(closestIndex);
-    }
-  }
+    }}
+  
   }, [activeIndex]);
 
   useEffect(() => {
@@ -101,7 +102,6 @@ const App = () => {
   useEffect(() => {
 
     const handleScroll = () => {
-      console.log(isMobile)
       const scrollPosition = window.scrollY;
 
     if(!isMobile)
