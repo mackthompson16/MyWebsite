@@ -1,6 +1,6 @@
-# PORTFOLIO WEBSITE
+** PORTFOLIO WEBSITE **
 
-### React Design with Dynamic Features for Smaller Viewports (Mobile)
+## React Design with Dynamic Features for Smaller Viewports (Mobile)
 
 ---
 
