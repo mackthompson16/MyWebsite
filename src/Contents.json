@@ -6,7 +6,7 @@
         "title": "Me",
         "bullets": [
           {"header": "HUMAN BEING", "bullet": "Hello, I am a human being from Atlanta. I am currently a junior computer science student at Auburn Univeristy. I am looking to get into data when I graduate in 2027. I am a passionate creator and curious person.",
-          "link" : {"type": "doc", "text": "View My Resume", "link" : "files/resume.pdf"}},
+          "link" : {"type": "doc", "text": "View Resume", "link" : "files/resume.pdf"}},
           {"bullet" : "Please reach out and talk to me mackthompson16@gmail.com"}
         ]
       }]
@@ -95,10 +95,9 @@
              "Managing income & accounting(via Excel and forms)",
              "Counselor outreach, training, & operation",
              "Organizing & painting jerseys for the campers."
-          ]
+          ],
        
-          },
-          {"header" : "Checkout Our Trailer", "link":{"type": "url", "text" : "Camp Movie", "link" : "https://youtu.be/GKlthhpZl3U?si=zdTVYFM-E3fBfxow"}}
+          "link":{"type": "url", "text" : "Camp Movie", "link" : "https://youtu.be/GKlthhpZl3U?si=zdTVYFM-E3fBfxow"}}
         ]
       }
     ]

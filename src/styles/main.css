@@ -45,7 +45,7 @@ body {
   color: var(--retro-text);
 
   --panel-bg: var(--retro-bg);
-
+  margin-bottom: 15vh;
   /* Optional: if you want some breathing room around the whole thing */
   /* padding: 1.5rem 2vw; */
 }
@@ -80,3 +80,8 @@ body {
 }
 
 
+@media (max-width: 720px) {
+  .main{
+    margin-bottom: 0;
+  }
+}
