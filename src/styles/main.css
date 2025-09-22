@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --retro-green: #00ff00;
+  --retro-green-dark: #00cc00;
+  --retro-bg: #000000;
+  --retro-text: #dcdcdc;
+  --retro-glow: rgba(0, 255, 0, 0.5);
+  --retro-glow-light: rgba(0, 255, 0, 0.3);
+  --retro-glow-dark:  #1d1f24;
+}
+
+html {
+  scroll-behavior: smooth; /* enables smooth scroll for hash/ScrollTo */
+}
+
+
+body {
+  margin: 0;
+  background-color: black;
+  color: var(--retro-text);
+  font-family: 'VT323';
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: black;
+}
+
+.main {
+  /* Full screen area (adjust if header stays fixed) */
+  display: flex;
+  /* Center content and keep your theme vars */
+  background: transparent;
+  color: var(--retro-text);
+
+  --panel-bg: var(--retro-bg);
+
+  /* Optional: if you want some breathing room around the whole thing */
+  /* padding: 1.5rem 2vw; */
+}
+
+.main-panel {
+  flex: 1;                   /* take all leftover space */
+  overflow: none;            /* scroll content inside panel */
+  background: transparent;
+  color: var(--retro-text);
+  flex-direction: column;
+  /* Center the inner <Content> to a nice measure */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15vh;
+}
+.content-section{
+  display:flex;
+  justify-content: center;
+}
+
+/* Constrain the content width without changing your component */
+.main-panel > * {
+  width: 100%;        /* match your previous container */
+  margin: 0 auto;
+}
+
+/* Smooth swap animation you already had */
+.swap-in {
+  animation: swapIn 240ms ease-out;
+}
+@keyframes swapIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+

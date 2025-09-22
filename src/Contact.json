@@ -1,0 +1,33 @@
+[
+   {"left":
+   [
+    {
+       "title" : "LinkedIn",
+       "link" : "https://linkedin/in/mackthompson1.com" 
+    },
+
+    {
+       "title" : "GitHub",
+       "link" : "https://github.com/mackthompson16" 
+    },
+    {
+       "title" : "Instagram",
+       "link" : "https://instagram.com/_mackthompson" 
+    }
+   ]
+   },
+
+   {"right":
+   [
+   {
+   "title" : "View Resume",
+   "ref" : "files/resume.pdf"
+   },
+   
+   {
+   "title" : "Message Me",
+   "ref" : "mackthompson16@gmail.com"
+   }
+   ]
+}     
+]

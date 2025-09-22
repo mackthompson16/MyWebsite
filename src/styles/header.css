@@ -1,0 +1,31 @@
+/* --- Minimal blurred header --- */
+.site-header {
+  position: fixed;
+  top: 0; right: 0;
+  z-index: 1000;
+    width:100vw;
+  /* frosted-glass */
+  background: rgba(0, 0, 0, 0.35);           /* tweak opacity as you like */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: var(--header-height, 64px);
+  box-sizing: border-box;
+  padding: 0 12px;
+  border: 0;
+}
+
+/* Space so content isn't hidden under fixed header */
+.main {
+  padding-top: var(--header-height, 64px);
+}
+
+/* --- Tabs row inside header --- */
+.header-tabs {
+  display: flex;
+  justify-content: flex-end;
+ }
+

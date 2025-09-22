@@ -1,61 +1,150 @@
-import { useEffect } from "react";
+// Content.jsx
+import { useEffect, useRef, useState, useMemo } from "react";
+import PropTypes from "prop-types";
+import "./styles/tabs.css";
+const slugify = (s = "") =>
+  s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
+const Content = ({ title, tabs }) => {
+  const containerRef = useRef(null);
+  const [active, setActive] = useState(0);
+  const groupId = useMemo(() => slugify(title || "section"), [title]);
 
-const Content = ({ title, description, link, image, isLeft, button,type }) => {
-
+  // keep your fade-in behavior
   useEffect(() => {
-    const fadeInElements = document.querySelectorAll(".fade-in");
-
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target); // Stop observing this element
+    const root = containerRef.current;
+    if (!root) return;
+    const els = root.querySelectorAll(".fade-in");
+    const io = new IntersectionObserver(
+      entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add("visible");
+            io.unobserve(e.target);
           }
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the element is visible
+      { threshold: 0.1 }
     );
+    els.forEach(el => io.observe(el));
+    return () => io.disconnect();
+  }, []);
 
-    fadeInElements.forEach(el => observer.observe(el));
+  const activeTab = tabs?.[active];
 
-    // Clean up observer on component unmount
-    return () => observer.disconnect();
-  }, []); // Empty dependency array ensures this runs only once
+return (
+  <section ref={containerRef} className="folder">
+    {/* Tab strip */}
+    <div
+      className="folder-tabs"
+      role="tablist"
+      aria-label={`${title} tabs`}
+    >
+      {Array.isArray(tabs) &&
+        tabs.map((tab, i) => (
+          <button
+            key={i}
+            className={`folder-tab retro-tab ${i === active ? "is-active" : ""}`}
+            role="tab"
+            aria-selected={i === active}
+            aria-controls={`panel-${groupId}-${i}`}
+            id={`tab-${groupId}-${i}`}
+            onClick={() => setActive(i)}
+            type="button"
+          >
+            {"[ " + tab.title + " ]"}
+          </button>
+        ))}
+    </div>
 
-  return (
-    <div className={`content ${type==='special' ?  'special':''} ${isLeft ? 'left' : 'right'} ${type==='last'? 'last':''}`}>
-      <div className={`content-content ${type==='special' ?  'special':''} ${isLeft ? 'left' : 'right'}`}>
-        
-       
-          <h1>{title}</h1>
-          <p>{description}</p>
-       
+    {/* Active panel */}
+    {activeTab && (
+      <div
+        className="folder-panel"
+        role="tabpanel"
+        id={`panel-${groupId}-${active}`}
+        aria-labelledby={`tab-${groupId}-${active}`}
+      >
+        {/* Bullets */}
+        <ul className="bullets-list">
+  {activeTab.bullets?.map((b, j) => (
+    <li key={j} className="bullet-item">
+      {b.header && <h4 className="bullet-header">{b.header}</h4>}
+      {b.bullet && <p className="bullet-text">{b.bullet}</p>}
 
-        {button && (
-           <div className="button">
-          <a class="fade-in" href={link} target="_blank" rel="noopener noreferrer">
-          {button}
-          </a>
-          </div>
-        )}
-       
-      
-      
-      </div>
-        
-      {image && (
-      <div className="content-image">
-        
-        <img class="fade-in" src={image} alt={title} />
-        
-      </div>
+      {/* Sublist */}
+      {Array.isArray(b.list) && (
+        <ol className="bullet-sublist">
+          {b.list.map((item, k) => (
+            <li key={k} className="sublist-item">
+              {item}
+            </li>
+          ))}
+        </ol>
       )}
 
+      {/* Link (url or doc) */}
+      {b.link && (
+        <a
+          href={b.link.link}
+          target={b.link.type === "url" ? "_blank" : "_self"}
+          rel={b.link.type === "url" ? "noopener noreferrer" : undefined}
+          className="link retro-tab"
+        >
+          {"[" + b.link.text + "]"}
+        </a>
+      )}
+    </li>
+  ))}
+</ul>
 
-    </div>
-  );
+
+        {/* Media */}
+        {activeTab.media && (
+          <div className="media-block">
+            <img
+              src={activeTab.media.name}
+              alt={activeTab.media.caption || "media"}
+              className="media-img"
+            />
+            {activeTab.media.caption && (
+              <p className="media-caption">{activeTab.media.caption}</p>
+            )}
+          </div>
+        )}
+      </div>
+    )}
+  </section>
+);
+
 };
+
+Content.propTypes = {
+  title: PropTypes.string.isRequired,
+  tabs: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      bullets: PropTypes.arrayOf(
+        PropTypes.shape({
+          header: PropTypes.string,
+          bullet: PropTypes.string,
+          list: PropTypes.arrayOf(PropTypes.string),
+          link: PropTypes.shape({
+            type: PropTypes.oneOf(["url", "doc"]).isRequired,
+            text: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired,
+          }),
+        })
+      ),
+      media: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        caption: PropTypes.string,
+      }),
+    })
+  ).isRequired,
+};
+
+
+
 
 export default Content;

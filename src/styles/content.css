@@ -1,0 +1,101 @@
+:root{
+  --folder-w: clamp(680px, 80vw, 1100px);
+  --folder-h: 75vh;
+  --tabs-h: 44px;
+}
+
+.folder {
+  /* was: height: 75vh; justify-content: center; */
+  width: var(--folder-w);
+  height: var(--folder-h);
+  margin: 0 auto;                    /* center the whole folder on the page */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;       /* tabs stay at the top */
+  gap: 8px;                          /* small spacing between tabs and panel */
+  min-height: 0;                     /* allow child to shrink for overflow */
+}
+
+.folder-tabs{
+  /* was: position: sticky; top: 0; align-items: center; ... */
+  position: relative;                /* no sticking needed */
+  height: var(--tabs-h);             /* constant tab strip height */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;           /* center the tabs horizontally */
+  align-items: center;               /* center within the strip */
+  gap: 12px;
+  background: transparent;
+}
+
+.folder-panel {
+  /* new: make the panel fill remaining space and scroll */
+  flex: 1 1 auto;
+  min-height: 0;                     /* critical for flex child scrolling */
+
+  display: flex;
+  justify-content: center;
+  max-width: 60vw;
+  margin: 0 auto;                    /* center panel inside folder */
+  background: transparent;
+  color: var(--retro-text);
+}
+
+/* (unchanged) */
+.bullets-list {
+    list-style: none;
+  margin: 0 auto;             /* center the UL block */
+  padding: 0;                 /* remove default left padding */
+  width: min(100%, 60ch);     /* nice readable line length; tweak as you like */
+
+  text-align: justify;
+  text-justify: inter-word;
+  /* optional: keep the final line from stretching weirdly */
+  text-align-last: left;
+}
+
+/* (unchanged) */
+.bullet-header {
+  text-align: justify;
+  font-weight: bold;
+  color: var(--retro-green);
+}
+
+/* (unchanged) */
+.bullet-text {
+  line-height: 1.5;
+  margin: 0;
+  text-shadow: 0 0 3px var(--retro-glow-light);
+}
+
+.link {
+  color: var(--retro-green, #00ff00);
+  text-decoration: none;
+}
+
+/* Mobile: take (almost) full width */
+@media (max-width: 720px) {
+  :root {
+    --folder-w: 90vw;          /* was clamp(...); now fills the screen nicely */
+    --tabs-h: 40px;            /* optional: slightly shorter strip on mobile */
+  }
+
+  .folder {
+    height: 50vh;              /* keep your fixed height */
+    margin: 0 auto;            /* remains centered */
+  }
+
+  /* Let the content use the full mobile width */
+  .folder-panel {
+    max-width: 100%;
+    padding: 0 8px;            /* tiny side padding so text isn't edge-to-edge */
+  }
+
+  /* Tabs row: allow horizontal scroll if many tabs */
+  .folder-tabs {
+    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: none;          /* Firefox */
+  }
+  .folder-tabs::-webkit-scrollbar { display: none; }  /* WebKit */
+}
