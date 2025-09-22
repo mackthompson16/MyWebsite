@@ -51,15 +51,14 @@ body {
 }
 
 .main-panel {
-  flex: 1;                   /* take all leftover space */
-  overflow: none;            /* scroll content inside panel */
+  flex: 1;                   
+  overflow: none;  
   background: transparent;
   color: var(--retro-text);
   flex-direction: column;
-  /* Center the inner <Content> to a nice measure */
   display: flex;
   justify-content: center;
-  margin-bottom: 15vh;
+  margin-bottom: 5vh;
 }
 .content-section{
   display:flex;
@@ -69,7 +68,6 @@ body {
 /* Constrain the content width without changing your component */
 .main-panel > * {
   width: 100%;        /* match your previous container */
-  margin: 0 auto;
 }
 
 /* Smooth swap animation you already had */

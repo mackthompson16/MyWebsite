@@ -1,6 +1,5 @@
 :root{
   --folder-w: clamp(680px, 80vw, 1100px);
-  --folder-h: 75vh;
   --tabs-h: 44px;
 }
 
@@ -8,7 +7,7 @@
   width: var(--folder-w);
   /* height: var(--folder-h); */      /* remove this */
   min-height: var(--folder-h);        /* keep target height, but allow growth */
-  margin: 0 auto;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -18,10 +17,6 @@
   overflow: hidden;                   /* minimal and safe */
 }
 
-/* 2) Guaranteed gap between consecutive folders (no collapsing) */
-.folder + .folder {
-  margin-top: clamp(16px, 4vh, 40px);
-}
 
 .folder-tabs{
   /* was: position: sticky; top: 0; align-items: center; ... */
@@ -49,11 +44,10 @@
 
 /* (unchanged) */
 .bullets-list {
-    list-style: none;
+list-style: none;
   margin: 0 auto;             /* center the UL block */
   padding: 0;                 /* remove default left padding */
   width: min(100%, 60ch);     /* nice readable line length; tweak as you like */
-
   text-align: justify;
   text-justify: inter-word;
   /* optional: keep the final line from stretching weirdly */
@@ -86,9 +80,8 @@
     --tabs-h: 40px;            /* optional: slightly shorter strip on mobile */
   }
 
-  .folder {
-    height: 75vh;              /* keep your fixed height */
-    margin: 0 auto;            /* remains centered */
+  .folder {             
+    margin: 0 auto;         
   }
 
   /* Let the content use the full mobile width */
