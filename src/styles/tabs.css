@@ -25,7 +25,8 @@
 
 /* --- SHARED TAB LOOK ----------------------------------------------------- */
 .retro-tab {
-    font-family: 'VT323';
+  font-family: 'VT323';
+        font-weight: bold;
   justify-content: center;
   border: 0;
   appearance: none;
@@ -63,7 +64,7 @@
     flex-direction: row;           /* horizontal rows */
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
     background: transparent;       /* no blur/strip */
     margin: 0;                     /* no extra space */
     padding: 4px 0;                /* tiny footprint */
