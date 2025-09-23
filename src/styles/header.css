@@ -30,6 +30,9 @@
  }
 
 @media (max-width: 720px) {
+  .header-tab{
+    font-size: 10px;
+  }
 .header{ display: flex;
   align-items: center;
   justify-content: center;

@@ -1,19 +1,11 @@
-:root{
-  --folder-w: clamp(680px, 80vw, 1100px);
-  --tabs-h: 44px;
-}
+
 
 .folder {
-  width: var(--folder-w);
-  /* height: var(--folder-h); */      /* remove this */
-  min-height: var(--folder-h);        /* keep target height, but allow growth */
-  margin-top: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   gap: 8px;
   min-height: 0;
-  /* create a new formatting context to avoid margin-collapsing with neighbors */
   overflow: hidden;                   /* minimal and safe */
 }
 
@@ -21,13 +13,16 @@
 .folder-tabs{
   /* was: position: sticky; top: 0; align-items: center; ... */
   position: relative;                /* no sticking needed */
-  height: var(--tabs-h);             /* constant tab strip height */
   display: flex;
   flex-direction: row;
   justify-content: center;           /* center the tabs horizontally */
   align-items: center;               /* center within the strip */
   gap: 12px;
   background: transparent;
+}
+.folder-tab{
+    align-self: flex-start;
+    font-size: 25px;
 }
 
 .folder-panel {
@@ -36,16 +31,14 @@
   min-height: 0;                     /* critical for flex child scrolling */
   display: flex;
   justify-content: center;
-  max-width: 60vw;
-  margin: 0 auto;                    /* center panel inside folder */
+  max-width: 60vw;                  /* center panel inside folder */
   background: transparent;
   color: var(--retro-text);
 }
 
 /* (unchanged) */
-.bullets-list {
-list-style: none;
-  margin: 0 auto;             /* center the UL block */
+.paragraphs-list {
+list-style: none;            /* center the UL block */
   padding: 0;                 /* remove default left padding */
   width: min(100%, 60ch);     /* nice readable line length; tweak as you like */
   text-align: justify;
@@ -55,16 +48,15 @@ list-style: none;
 }
 
 /* (unchanged) */
-.bullet-header {
+.paragraph-header {
   text-align: justify;
   font-weight: bold;
   color: var(--retro-green);
 }
 
 /* (unchanged) */
-.bullet-text {
+.paragraph-text {
   line-height: 1;
-  margin: 0;
   text-shadow: 0 0 3px var(--retro-glow-light);
 }
 
@@ -73,16 +65,36 @@ list-style: none;
   text-decoration: none;
 }
 
-/* Mobile: take (almost) full width */
+@media (min-width: 721px){
+
+.folder-tabs {
+  flex: 0 0 240px;          /* fixed left column */
+ align-self: center;   /* don't stretch vertically */
+  margin-top: 5vh;
+  flex-direction: column;
+}
+.folder-content {
+  width:40vw;
+}
+
+.folder-panel {
+  flex: 1 1 auto; 
+  min-width: 0;             /* key: lets content shrink instead of pushing tabs */
+}
+
+
+
+
+}
 @media (max-width: 720px) {
+  .folder{
+    flex-direction: column;
+  }
   :root {
     --folder-w: 90vw;          /* was clamp(...); now fills the screen nicely */
     --tabs-h: 40px;            /* optional: slightly shorter strip on mobile */
   }
 
-  .folder {             
-    margin: 0 auto;         
-  }
 
   /* Let the content use the full mobile width */
   .folder-panel {
@@ -92,6 +104,7 @@ list-style: none;
 
   /* Tabs row: allow horizontal scroll if many tabs */
   .folder-tabs {
+  
   display: flex;
   justify-content: center;
   align-items: center;     /* 'space-inbetween' isn't valid */
@@ -100,4 +113,15 @@ list-style: none;
   gap: 0px;  /* 12px normally, smoothly down to 0 */
 }
   .folder-tabs::-webkit-scrollbar { display: none; }  /* WebKit */
+
+  .folder-tab{
+    font-size: 10px;
+  }
+}
+
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
 }

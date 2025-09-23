@@ -34,8 +34,8 @@ const Content = ({ title, tabs }) => {
 
 return (
   <section ref={containerRef} className="folder">
-    {/* Tab strip */}
-    <div
+
+     <div
       className="folder-tabs"
       role="tablist"
       aria-label={`${title} tabs`}
@@ -57,6 +57,8 @@ return (
         ))}
     </div>
 
+   <div className="folder-content">
+        <div className="title">{title}</div>
     {/* Active panel */}
     {activeTab && (
       <div
@@ -65,16 +67,16 @@ return (
         id={`panel-${groupId}-${active}`}
         aria-labelledby={`tab-${groupId}-${active}`}
       >
-        {/* Bullets */}
-        <ul className="bullets-list">
-  {activeTab.bullets?.map((b, j) => (
-    <li key={j} className="bullet-item">
-      {b.header && <h4 className="bullet-header">{b.header}</h4>}
-      {b.bullet && <p className="bullet-text">{b.bullet}</p>}
+   
+        <ul className="paragraphs-list">
+  {activeTab.paragraphs?.map((b, j) => (
+    <li key={j} className="paragraph-item">
+      {b.header && <h4 className="paragraph-header">{b.header}</h4>}
+      {b.paragraph && <p className="paragraph-text">{b.paragraph}</p>}
 
       {/* Sublist */}
       {Array.isArray(b.list) && (
-        <ol className="bullet-sublist">
+        <ol className="paragraph-sublist">
           {b.list.map((item, k) => (
             <li key={k} className="sublist-item">
               {item}
@@ -114,6 +116,7 @@ return (
         )}
       </div>
     )}
+    </div>
   </section>
 );
 
@@ -124,10 +127,10 @@ Content.propTypes = {
   tabs: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
-      bullets: PropTypes.arrayOf(
+      paragraphs: PropTypes.arrayOf(
         PropTypes.shape({
           header: PropTypes.string,
-          bullet: PropTypes.string,
+          paragraph: PropTypes.string,
           list: PropTypes.arrayOf(PropTypes.string),
           link: PropTypes.shape({
             type: PropTypes.oneOf(["url", "doc"]).isRequired,

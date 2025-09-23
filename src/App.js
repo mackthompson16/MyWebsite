@@ -105,7 +105,7 @@ const buildHref = (item) => {
               <section
                 key={secId}
                 id={secId}
-                className="content-section"
+                className={`content-section index-${i}`}
                 ref={(el) => (sectionRefs.current[i] = el)}
                 data-index={i}
                 aria-labelledby={`left-tab-${groupId}-${i}`}
