@@ -1,12 +1,11 @@
-/* Full-width fixed header */
 .App-title {
   height: 100vh;
   display: flex;
-  justify-content: center;   /* center inner wrapper horizontally */
-  align-items: center;       /* center vertically */
+  justify-content: center;   /* centers the wrapper */
+  align-items: center;       /* centers vertically */
   background: transparent;
-
 }
+
 
 /* Optional centered max-width container inside the header */
 .title-inner {
@@ -17,6 +16,7 @@
   justify-content: center;   /* center your title/nav inside */
   align-items: center;
   gap: 1rem;
+    place-items: center; 
 }
 
 

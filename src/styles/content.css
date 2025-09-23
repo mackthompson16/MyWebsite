@@ -140,19 +140,22 @@
   }
 
   /* Tabs row: allow horizontal scroll if many tabs */
-  .folder-tabs {
-  
+ .folder-tabs {
   display: flex;
-  justify-content: center;
-  align-items: center;     /* 'space-inbetween' isn't valid */
-  overflow-x: auto;
-  scrollbar-width: none;   /* Firefox */
-  gap: 0px;  /* 12px normally, smoothly down to 0 */
+  flex-direction: row;
+  flex-wrap: nowrap;          /* <- never wrap to a new line */
+  overflow-x: auto;           /* horizontal scroll instead */
+  overflow-y: hidden;
+  gap: 0;                     /* you wanted no gap */
+  justify-content: center;/* centering + overflow can look odd */
+  align-items: center;
+  white-space: nowrap;        /* keep inline content on one line */
+  scrollbar-width: none;      /* Firefox hide scrollbar */
 }
   .folder-tabs::-webkit-scrollbar { display: none; }  /* WebKit */
 
   .folder-tab{
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
