@@ -1,11 +1,11 @@
-// Content.jsx
 import { useEffect, useRef, useState, useMemo } from "react";
 import PropTypes from "prop-types";
 import "./styles/tabs.css";
+import FolderTabs from "./FolderTabs.js";
 const slugify = (s = "") =>
   s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
-const Content = ({ title, tabs }) => {
+const Content = ({ title, tabs, id }) => {
   const containerRef = useRef(null);
   const [active, setActive] = useState(0);
   const groupId = useMemo(() => slugify(title || "section"), [title]);
@@ -34,29 +34,13 @@ const Content = ({ title, tabs }) => {
 
 return (
   <section ref={containerRef} className="folder">
-
-     <div
-      className="folder-tabs"
-      role="tablist"
-      aria-label={`${title} tabs`}
-    >
-      {Array.isArray(tabs) &&
-        tabs.map((tab, i) => (
-          <button
-            key={i}
-            className={`folder-tab retro-tab ${i === active ? "is-active" : ""}`}
-            role="tab"
-            aria-selected={i === active}
-            aria-controls={`panel-${groupId}-${i}`}
-            id={`tab-${groupId}-${i}`}
-            onClick={() => setActive(i)}
-            type="button"
-          >
-            {"[ " + tab.title + " ]"}
-          </button>
-        ))}
-    </div>
-
+       <FolderTabs
+        title={title}
+        tabs={tabs}
+        active={active}
+        setActive={setActive}
+        groupId={groupId}
+      />
    <div className="folder-content">
         <div className="title">{title}</div>
     {/* Active panel */}
@@ -68,24 +52,20 @@ return (
         aria-labelledby={`tab-${groupId}-${active}`}
       >
    
-        <ul className="paragraphs-list">
+ <ul className="paragraphs-list" key={`plist-${active}`}>
   {activeTab.paragraphs?.map((b, j) => (
     <li key={j} className="paragraph-item">
       {b.header && <h4 className="paragraph-header">{b.header}</h4>}
       {b.paragraph && <p className="paragraph-text">{b.paragraph}</p>}
 
-      {/* Sublist */}
       {Array.isArray(b.list) && (
         <ol className="paragraph-sublist">
           {b.list.map((item, k) => (
-            <li key={k} className="sublist-item">
-              {item}
-            </li>
+            <li key={k} className="sublist-item">{item}</li>
           ))}
         </ol>
       )}
 
-      {/* Link (url or doc) */}
       {b.link && (
         <a
           href={b.link.link}
@@ -101,19 +81,6 @@ return (
 </ul>
 
 
-        {/* Media */}
-        {activeTab.media && (
-          <div className="media-block">
-            <img
-              src={activeTab.media.name}
-              alt={activeTab.media.caption || "media"}
-              className="media-img"
-            />
-            {activeTab.media.caption && (
-              <p className="media-caption">{activeTab.media.caption}</p>
-            )}
-          </div>
-        )}
       </div>
     )}
     </div>

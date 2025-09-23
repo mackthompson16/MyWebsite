@@ -37,15 +37,49 @@
 }
 
 /* (unchanged) */
+/* Your existing list styles */
 .paragraphs-list {
-list-style: none;            /* center the UL block */
-  padding: 0;                 /* remove default left padding */
-  width: min(100%, 60ch);     /* nice readable line length; tweak as you like */
+  list-style: none;
+  padding: 0;
+  width: min(100%, 60ch);
   text-align: justify;
   text-justify: inter-word;
-  /* optional: keep the final line from stretching weirdly */
   text-align-last: left;
+  margin: 0;
 }
+
+/* Animate each item on mount */
+.paragraph-item {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: plist-enter 240ms ease-out forwards;
+  will-change: opacity, transform;
+}
+
+/* Stagger: first few items (extend as needed) */
+.paragraph-item:nth-child(1)  { animation-delay: 30ms; }
+.paragraph-item:nth-child(2)  { animation-delay: 60ms; }
+.paragraph-item:nth-child(3)  { animation-delay: 90ms; }
+.paragraph-item:nth-child(4)  { animation-delay: 120ms; }
+.paragraph-item:nth-child(5)  { animation-delay: 150ms; }
+.paragraph-item:nth-child(6)  { animation-delay: 180ms; }
+.paragraph-item:nth-child(7)  { animation-delay: 210ms; }
+.paragraph-item:nth-child(8)  { animation-delay: 240ms; }
+
+@keyframes plist-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  .paragraph-item {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 
 /* (unchanged) */
 .paragraph-header {
@@ -75,6 +109,9 @@ list-style: none;            /* center the UL block */
 }
 .folder-content {
   width:40vw;
+}
+.folder-tab{
+  margin-left: 20px;
 }
 
 .folder-panel {

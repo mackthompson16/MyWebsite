@@ -8,6 +8,18 @@
   background: transparent;
 }
 
+
+/* The arrow: sits to the left and slides vertically */
+.tab-arrow {
+  position: absolute;
+  left: 0;        
+  top: 0; 
+  display: block;
+  font-size: 3rem;
+  color: #fff;           
+  transition: transform 200ms ease;
+}
+
 .left-tabs {  top:10vh; left: 30px; }
 .right-tabs {  bottom: 5vh; right: 30px; }
 
@@ -54,6 +66,7 @@
 
 /* Mobile footer behavior */
 @media (max-width: 720px) {
+   .tab-arrow { display: none; }
   /* optional wrapper if you have one
      .site-footer { margin-top: 2rem; } */
 

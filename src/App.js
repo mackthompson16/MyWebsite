@@ -110,7 +110,7 @@ const buildHref = (item) => {
                 data-index={i}
                 aria-labelledby={`left-tab-${groupId}-${i}`}
               >
-                <Content title={section.title} tabs={section.tabs} />
+                <Content title={section.title} tabs={section.tabs} id={groupId}/>
               </section>
             );
           })}
