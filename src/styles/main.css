@@ -89,7 +89,6 @@ body {
   }
 }
 
-@media (min-width: 721px){
   .index-0{
     height:375px;
   }
@@ -100,6 +99,5 @@ body {
     height:500px;
   }
   .index-3{
-    height:500px;
+    height:530px;
   }
-}

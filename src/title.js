@@ -48,7 +48,7 @@ Hello, I'm
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const mq = window.matchMedia("(max-width: 720px)");
+    const mq = window.matchMedia("(max-width: 1100px)");
 
     const apply = (matches) => {
       setIsMobile(matches);
