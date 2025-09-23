@@ -5,9 +5,9 @@
       [{
         "title": "Me",
         "paragraphs": [
-          {"header": "HUMAN BEING", "paragraph": "I am a human being from Atlanta. I am currently a junior computer science student at Auburn Univeristy. I am looking to get into data when I graduate in 2027. I am a passionate creator and curious person.",
+          {"header": "HUMAN BEING", "paragraph": "Human from Atlanta; junior computer science student at Auburn Univeristy; looking to get into data; passionate creator; curious person; chill guy.",
           "link" : {"type": "doc", "text": "View Resume", "link" : "files/resume.pdf"}},
-          {"paragraph" : "Please reach out and talk to me mackthompson16@gmail.com"}
+          {"paragraph" : "Please reach out mackthompson16@gmail.com"}
         ]
       }]
   },
@@ -22,10 +22,10 @@
         { "header": "Why BA in Computer Science?", "list":
          [
           "The intelligence revolution will define my generation",
-          "If I can understand the complexity of a computer, some day I might understand myself.",
-         "Is computer science a feat of human genius, or does it naturally emerge from the universe?"
+          "If I can understand the complexity of a computer, some day I might understand myself."
+
          ]
-        ,
+        ,"paragraph": "Is computer science a feat of human genius, or does it naturally emerge from the universe?",
         "link" : {"type": "doc", "text": "View Unofficial Transcript", "link" : "files/transcript.pdf"}}
 
         ]
@@ -35,9 +35,9 @@
         "title": "Minors",
         "paragraphs": 
         [
-          {"header" : "BET", "paragraph" : "My Business Engineering Technology (BET) minor forces me to collaborate on entreprenuial projects wit students across disciplines.",
+          {"header" : "BET", "paragraph" : "My Business Engineering Technology (BET) minor forces me to collaborate on entreprenuial projects with students across disciplines.",
         "link":{"type":"url", "text": "What is BET?", "url": "https://eng.auburn.edu/insy/research/twc/bet-program/index.html"}},
-          {"header" : "Math", "paragraph" : "I study mathematics to deepen my understanding of MACHINE LEARNING and PHILOSOPHY!"}
+          {"header" : "Math", "paragraph" : "I study mathematics to deepen my understanding of MACHINE LEARNING and PHILOSOPHY! I am on track to double major for my interest in quantitative/analytical roles but have not commited yet."}
         ]
       },
       {
@@ -66,8 +66,8 @@
         "paragraphs":
         [
           {"paragraph": "I'm building solutions for graduate students pursuing their dissertations."},
-          {"header": "Computer Vision", "paragraph": "Detected skin conditions by contstructing a dataset and diluting a public model."},
-          {"header": "App Development", "paragraph": "Developed a therapy mobile app to help people with OCD and related illnesses (full stack)."}
+          {"header": "Computer Vision", "paragraph": "For my most recent project I used vision to detect skin conditions. I webscraped a dataset and manual cleaned it, then diluted a public model (EffcientNet) to score our results."},
+          {"header": "App Development", "paragraph": "I also developed a therapy mobile app to experiment with generative AI in the realm of human psychology (full stack development)."}
     
         ]  },
       {
@@ -88,7 +88,7 @@
       {
         "title": "Owner",
         "paragraphs": [
-          {"header": "BWH SPORTS CAMP", "paragraph" : "In its last summer, we took around 55 kids for four weeklong sessions. The estimated gross revenue over 4 years was > $100,000."},
+          {"header": "BWH SPORTS CAMP", "paragraph" : "In its last summer, we took around 55 kids for four weeklong sessions. The estimated gross revenue over 4 years was over $100,000."},
           {"paragraph":"I learned a lot,", "list": [
             
              "Instagram prescence & YouTube advertisements",
