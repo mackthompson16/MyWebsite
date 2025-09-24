@@ -120,11 +120,11 @@ const buildHref = (item) => {
         </div>
       </section>
       
-<nav className="left-tabs retro-tab" aria-label="Social links">
+<nav className="left-tabs" aria-label="Social links">
   {leftList.map((item, i) => (
     <a
       key={`left-${i}`}
-      className="left-tab"
+      className="left-tab retro-tab"
       id={`left-tab-${groupId}-${i}`}
       href={buildHref(item)}
       target="_blank"
@@ -135,7 +135,7 @@ const buildHref = (item) => {
   ))}
 </nav>
 
-<nav className="right-tabs retro-tab" aria-label="Contact links">
+<nav className="right-tabs" aria-label="Contact links">
   {rightList.map((item, i) => {
     const href = buildHref(item);
     const isPdf = typeof item.ref === "string" && /\.pdf(\?|$)/i.test(item.ref);
@@ -144,7 +144,7 @@ const buildHref = (item) => {
     return (
       <a
         key={`right-${i}`}
-        className="right-tab"
+        className="right-tab  retro-tab"
         id={`right-tab-${groupId}-${i}`}
         href={href}
         // open PDFs/external in a new tab; mailto opens the mail client

@@ -62,7 +62,24 @@
 }
 
 @media (max-width: 720px) {
-  .godhand{
-    display: none;
-  }
+  :root{
+  --gh-progress: 0;
+
+  /* start (off corners) -> end (closer together) positions */
+  /* LEFT hand: move down-right as you scroll */
+  --gh-left-x-start: 100vw;  --gh-left-y-start: -50vh;
+  --gh-left-x-end:    100vw;  --gh-left-y-end:   10vh;
+
+  /* RIGHT hand: move up-left as you scroll */
+  --gh-right-x-start: -150vw; --gh-right-y-start: 130vh;
+  --gh-right-x-end:   -150vw;  --gh-right-y-end:   90vh;
+
+  /* sizes + tilt */
+  --gh-left-size: 75vh;   --gh-right-size: 75vh;
+  --gh-left-rot: 90deg;   --gh-right-rot: 90deg;
+
+  --gh-opacity-start: 0.25;
+  --gh-opacity-end:   0.30;
+}
+
 }

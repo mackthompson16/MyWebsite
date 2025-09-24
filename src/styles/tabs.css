@@ -43,16 +43,23 @@
   border: 0;
   appearance: none;
   background: transparent;
-  color: var(--retro-text);
+ 
   cursor: pointer;
   letter-spacing: .05em;
   line-height: 1;
 
+  color: var(--retro-text);
+  transition:
+    color 240ms ease;
+
 }
 
-/* hover + active (shared tone) */
 .retro-tab.is-active {
   color: var(--retro-green);
+ 
+}
+.retro-tab:not(.is-active):hover {
+  color: var(--retro-green-dark);
 }
 
 /* accessibility */
