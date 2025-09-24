@@ -65,7 +65,7 @@ const buildHref = (item) => {
     // email draft (accepts bare email like "name@domain")
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(item.ref)) {
       const to = item.ref;
-      const subject = encodeURIComponent("Hello from your website");
+      const subject = encodeURIComponent("LOVE CONFESSION");
       const body    = encodeURIComponent("Hi Mack,\n\nI saw your portfolio and wanted to reach out.\n");
       return `mailto:${to}?subject=${subject}&body=${body}`;
     }
@@ -80,7 +80,7 @@ const buildHref = (item) => {
 
   return (
     <div className="App">
-       <BackgroundGodHands rangePx={1400} />
+       <BackgroundGodHands rangePx={2700} />
       <Title />
 
       <section className="main">

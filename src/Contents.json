@@ -5,7 +5,7 @@
       [{
         "title": "Me",
         "paragraphs": [
-          {"header": "HUMAN BEING", "paragraph": "Human from Atlanta; junior computer science student at Auburn Univeristy; looking to get into data; passionate creator; curious person; chill guy.",
+          {"header": "HUMAN BEING", "paragraph": "Human from Atlanta; junior computer science student at Auburn Univeristy; looking to get into data; passionate creator; curious person; chill guy; mad lad; 6 7.",
           "link" : {"type": "doc", "text": "View Resume", "link" : "files/resume.pdf"}},
           {"paragraph" : "Please reach out mackthompson16@gmail.com"}
         ]
@@ -57,8 +57,8 @@
         "paragraphs": 
         [
           {"header" : "BET", "paragraph" : "My Business Engineering Technology (BET) minor forces me to collaborate on entreprenuial projects with students across disciplines.",
-        "link":{"type":"url", "text": "What is BET?", "url": "https://eng.auburn.edu/insy/research/twc/bet-program/index.html"}},
-          {"header" : "Math", "paragraph" : "I study mathematics to deepen my understanding of MACHINE LEARNING and PHILOSOPHY! I am on track to double major for my interest in quantitative/analytical roles but have not commited yet."}
+        "link":{"type":"url", "text": "What is BET?", "link": "https://eng.auburn.edu/insy/research/twc/bet-program/index.html"}},
+          {"header" : "Math", "paragraph" : "I study mathematics to deepen my understanding of MACHINE LEARNING and PHILOSOPHY! I am on track to double major but have not commited yet."}
         ]
       },
       {
@@ -66,7 +66,7 @@
         "paragraphs":
         [
           {"header": "Competitive Programming", "paragraph": "Each year I travel with Auburn's team to compete in ICPC. We have meetings weekly and competitions monthly. I took home a medal in 2024!"},
-          {"header": "Lambda Chi Alpha", "paragraph": "My fraternity helps me socialize build connections here at Auburn. I try to have the new CSSE members come to ICPC with me to show them the ropes."},
+          {"header": "Lambda Chi Alpha", "paragraph": "My fraternity helps me socialize and let off steam. I try to have the new CSSE members come to ICPC with me."},
           {"header": "STARS Computing Core", "paragraph": "Stars is a computing outreach program for K-12. I've made presentations for highschool classes and run tables at college day."}
         ]
          
@@ -80,8 +80,8 @@
         "title": "Software",
         "paragraphs":
         [
-          {"header": "Kahua Inc.", "paragraph": "Last summer I worked for a platform software company that builds solutions for (primarily) construction projects.",
-          "list":["Developed automated testing agents","Wrote internal functions to broaden the testing framework", "Created a developer tool that increased my team’s efficiency by ~30% (Summer Highlight!)", "Operated in a cooperate environment"]}
+          {"header": "Kahua Inc.", "paragraph": "Last summer I worked for a platform software company that builds solutions for construction projects. I worked primarily for the quality assurance team.",
+          "list":["Developed automated testing agents","Wrote internal functions to broaden the testing framework", "Created a developer tool that increased my team’s efficiency by ~30% (Summer Highlight!)", "Operated in a corporate environment"]}
         ] },
       {
         "title": "Research",
@@ -95,14 +95,13 @@
       {
         "title": "Freelance",
         "paragraphs": [
-            {"header": "JupJewels.com", "paragraph":"I created a website for a local company, JupJewels, with lots of custom features.",
+            {"header": "JupJewels.com", "paragraph":"I created a website for a local company, JupJewels, with lots of custom features, communicating directly with the client:",
             "list":
              [
-              "Communicated directly with the client",
-             "A custom jewelry page where a customer can create their own design on a canvas",
+             "A DIY jewelry-canvas page",
              "Embedded data for rich search results",
               "Dynamically updating featured items",
-               "an email subscription list and automations"
+               "Email subscription automations"
             ], "link" : {"type": "url", "text": "View Website", "link" : "jupjewels.com"}
           }
         ]
@@ -111,7 +110,7 @@
         "title": "Owner",
         "paragraphs": [
           {"header": "BWH SPORTS CAMP", "paragraph" : "I founded this company in highschool. During our peak, we took around 55 kids for four weeklong sessions. The estimated gross revenue over 4 years was over $100,000."},
-          {"paragraph":"I learned a lot,", "list": [
+          {"paragraph":"I learned a lot:", "list": [
             
              "Instagram prescence & YouTube advertisements",
              "Managing income & accounting(via Excel and forms)",
@@ -134,13 +133,13 @@
       {
         "title": "Programming",
         "paragraphs": [
-        {"header": "Email Bot", "paragraph" : "This managed my BWH Sports camp business email.", 
+        {"header": "Email Bot", "paragraph" : "This managed my BWH Sports camp business email by answering repetitive email questions from the parents. Here's how I set it up:", 
         "list":[
           "Listen for notification on google cloud",
-          "Determine if message is valid.",
-           "Inject FAQ into message context.", 
-           "Generate response using an LLM.", 
-           "Format email and send."
+          "Determine if message is valid",
+           "Inject FAQ into message context", 
+           "Generate response using an LLM", 
+           "Format email and send"
           ],
         "link": {"type": "url", "text": "View Project", "link":"https://github.com/mackthompson16/EmailBot"}
       },
@@ -154,7 +153,7 @@
        "title": "Writing",
         "paragraphs": 
       [
-        {"header": "EPRIUGBEPIUTBGPEIRGWAWARGEUIRGB", "paragraph": "I had a bad head injury that humilated an invincibility complex I built up. This led me to write profusely about life, death, purpose... a conversation I needed to have with myself. I hope to publish my book by the time I graduate college, but it doesn't matter no one ever reads it. It matters to me that I wrote it."},
+        {"header": "EPRIUGBEPIUTBGPEIRGWAWARGEUIRGB", "paragraph": "I had a traumatic head injury (from a charity boxing match) that humilated an invincibility complex I built up. This led me to write profusely about life, death, purpose... a conversation I needed to have with myself. I hope to publish my book by the time I graduate college, but it doesn't matter if no one reads it. It matters to me that I wrote it."},
         {"header" : "Table of Contents", "paragraph": "", "list" :  ["An Agnostic Framework for the Universe","Navigating Conscious Experience", "Playing Civilization", "A Search for Self"],
         "link" : {"type": "doc","text":"Preview part one", "link" : "files/Part1.pdf"}}
   

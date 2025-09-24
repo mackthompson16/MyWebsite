@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
-export default function BackgroundGodHands({ rangePx = 1400 }) {
+export default function BackgroundGodHands({ rangePx = 3000 }) {
   useEffect(() => {
     const onScroll = () => {
       const p = Math.max(0, Math.min(1, window.scrollY / rangePx));
@@ -19,10 +19,9 @@ export default function BackgroundGodHands({ rangePx = 1400 }) {
 
   return createPortal(
     <div className="godhands-fixed" aria-hidden="true">
-      <img className="godhand godhand-left" src="/LeftGodHand.jpg" alt="" draggable="false" />
-      <img className="godhand godhand-right" src="/RightGodHand.jpg" alt="" draggable="false" />
+      <img className="godhand godhand-left" src="./files/LeftGodHand.jpg" alt="" draggable="false" />
+      <img className="godhand godhand-right" src="./files/RightGodHand.jpg" alt="" draggable="false" />
     </div>,
     document.body
   );
 }
-  
