@@ -9,7 +9,28 @@
           "link" : {"type": "doc", "text": "View Resume", "link" : "files/resume.pdf"}},
           {"paragraph" : "Please reach out mackthompson16@gmail.com"}
         ]
-      }]
+      },
+      {
+       
+  "title": "Tech",
+  "paragraphs": [
+    {
+      "header": "Languages",
+      "paragraph": "Python, Java, C#, JavaScript, TypeScript, HTML/CSS, Ruby, MIPS Assembly, SQL"
+    },
+    {
+      "header": "Frameworks & Libraries",
+      "paragraph": 
+        "React, Next.js, Node.js, Tailwind, CSS, Pandas, NumPy, PyTorch, TensorFlow, Selenium, OpenAI, SDK, NUnit, WinAppDriver"   
+    },
+    {
+      "header": "Platforms",
+      "paragraph": "Google Cloud Platform (Pub/Sub, VM), AWS, Firebase, Shopify (Liquid, Storefront GraphQL API), Git/GitHub, Adobe Premiere Pro, Adobe Photoshop, Autodesk Fusion 360, WebSockets, GraphQL, Excel, Wix"
+    }
+  ]
+
+      }
+    ]
   },
   {
     "title": "College",
@@ -59,7 +80,8 @@
         "title": "Software",
         "paragraphs":
         [
-          {"header": "Kahua", "paragraph": "Last summer I worked for a platform software company that builds solutions for construction companies. I developed automated testing agents using C# and a selenium driver(17 unique tests and 12 internal functions). I created a developer tool that increased my team’s efficiency by ~30% during the company hackathon (ASK!)."}
+          {"header": "Kahua Inc.", "paragraph": "Last summer I worked for a platform software company that builds solutions for (primarily) construction projects.",
+          "list":["Developed automated testing agents","Wrote internal functions to broaden the testing framework", "Created a developer tool that increased my team’s efficiency by ~30% (Summer Highlight!)", "Operated in a cooperate environment"]}
         ] },
       {
         "title": "Research",
@@ -77,7 +99,7 @@
             "list":
              [
               "Communicated directly with the client",
-             "A custom jewelry page where a customer can create their own design on a canvas.",
+             "A custom jewelry page where a customer can create their own design on a canvas",
              "Embedded data for rich search results",
               "Dynamically updating featured items",
                "an email subscription list and automations"
@@ -88,7 +110,7 @@
       {
         "title": "Owner",
         "paragraphs": [
-          {"header": "BWH SPORTS CAMP", "paragraph" : "In its last summer, we took around 55 kids for four weeklong sessions. The estimated gross revenue over 4 years was over $100,000."},
+          {"header": "BWH SPORTS CAMP", "paragraph" : "I founded this company in highschool. During our peak, we took around 55 kids for four weeklong sessions. The estimated gross revenue over 4 years was over $100,000."},
           {"paragraph":"I learned a lot,", "list": [
             
              "Instagram prescence & YouTube advertisements",
@@ -97,7 +119,11 @@
              "Organizing & painting jerseys for the campers."
           ],
        
-          "link":{"type": "url", "text" : "Camp Movie", "link" : "https://youtu.be/GKlthhpZl3U?si=zdTVYFM-E3fBfxow"}}
+          "link":{"type": "url", "text" : "Camp Movie", "link" : "https://youtu.be/GKlthhpZl3U?si=zdTVYFM-E3fBfxow"}},
+          {"link":{"type": "url", "text" : "Camp Instagram", "link" : "https://instagram.com/BWH_Sports_Camp"}}
+          
+      
+
         ]
       }
     ]
@@ -128,7 +154,7 @@
        "title": "Writing",
         "paragraphs": 
       [
-        {"header": "EPRIUGBEPIUTBGPEIRGWAWARGEUIRGB", "paragraph": "I hope to publish my book by the time I graduate college."},
+        {"header": "EPRIUGBEPIUTBGPEIRGWAWARGEUIRGB", "paragraph": "I had a bad head injury that humilated an invincibility complex I built up. This led me to write profusely about life, death, purpose... a conversation I needed to have with myself. I hope to publish my book by the time I graduate college, but it doesn't matter no one ever reads it. It matters to me that I wrote it."},
         {"header" : "Table of Contents", "paragraph": "", "list" :  ["An Agnostic Framework for the Universe","Navigating Conscious Experience", "Playing Civilization", "A Search for Self"],
         "link" : {"type": "doc","text":"Preview part one", "link" : "files/Part1.pdf"}}
   

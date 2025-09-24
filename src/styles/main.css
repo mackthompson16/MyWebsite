@@ -16,7 +16,7 @@ html {
 
 
 body {
-  background-color: black;
+  background-color: transparent;
   color: var(--retro-text);
   font-family: 'VT323';
   line-height: 1.6;
@@ -34,17 +34,22 @@ html, body {
   min-width: 0;      /* allow shrinking */
 }
 
+
 .App {
   display: flex;
   flex-direction: column;
   overflow: visible;
+  position: relative;
+  z-index: 1;                /* sits ABOVE the bg layer */
+  isolation: isolate;   
 }
+
+
 
 .page {
   display: flex;
   flex-direction: row;
   position: relative;
-  background: black;
 }
 
 .main {
@@ -100,7 +105,7 @@ html, body {
 }
 
   .index-0{
-    height:375px;
+    height:450px;
   }
   .index-1{
     height:500px;

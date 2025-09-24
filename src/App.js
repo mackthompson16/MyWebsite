@@ -4,11 +4,13 @@ import contentsData from "./Contents.json";
 import Content from "./Content";
 import Title from "./title";
 import contactData from "./Contact.json";
+import BackgroundGodHands from "./backgroundGodHands.js";
 import "./styles/tabs.css";
 import "./styles/title.css";
 import "./styles/main.css";
 import "./styles/header.css";
 import"./styles/content.css";
+import "./styles/godHands.css";
 
 const slugify = s =>
   (s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -78,6 +80,7 @@ const buildHref = (item) => {
 
   return (
     <div className="App">
+       <BackgroundGodHands rangePx={1400} />
       <Title />
 
       <section className="main">
