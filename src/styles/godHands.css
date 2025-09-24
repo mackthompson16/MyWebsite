@@ -14,8 +14,8 @@
   --gh-left-size: 75vw;   --gh-right-size: 75vw;
   --gh-left-rot: 0deg;   --gh-right-rot: 0deg;
 
-  --gh-opacity-start: 0.15;
-  --gh-opacity-end:   0.15;
+  --gh-opacity-start: 0.25;
+  --gh-opacity-end:   0.30;
 }
 
 /* fixed, fullscreen, behind everything */
