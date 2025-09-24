@@ -3,20 +3,20 @@
     "title": "Me",
     "tabs": 
       [{
-        "title": "Me",
+        "title": "Hi!",
         "paragraphs": [
-          {"header": "HUMAN BEING", "paragraph": "Human from Atlanta; junior computer science student at Auburn Univeristy; looking to get into data; passionate creator; curious person; chill guy; mad lad; 6 7.",
+          {"header": "HOMO SAPIEN", "paragraph": "Sapien from Atlanta; computer science student; interested in data analytics; curiously passionate; passionately curious; chill guy; mad lad; 6 7.",
           "link" : {"type": "doc", "text": "View Resume", "link" : "files/resume.pdf"}},
           {"paragraph" : "Please reach out mackthompson16@gmail.com"}
         ]
       },
       {
        
-  "title": "Tech",
+  "title": "My Tech",
   "paragraphs": [
     {
       "header": "Languages",
-      "paragraph": "Python, Java, C#, JavaScript, TypeScript, HTML/CSS, Ruby, MIPS Assembly, SQL"
+      "paragraph": "Python, Java, C#, JavaScript, TypeScript, HTML/CSS, SQL, Ruby, MIPS Assembly"
     },
     {
       "header": "Frameworks & Libraries",
@@ -25,7 +25,7 @@
     },
     {
       "header": "Platforms",
-      "paragraph": "Google Cloud Platform (Pub/Sub, VM), AWS, Firebase, Shopify (Liquid, Storefront GraphQL API), Git/GitHub, Adobe Premiere Pro, Adobe Photoshop, Autodesk Fusion 360, WebSockets, GraphQL, Excel, Wix"
+      "paragraph": "Google Cloud Platform, AWS, Firebase, Shopify (Liquid), Git/GitHub, AZDO, Adobe Premiere Pro, Adobe Photoshop, Autodesk Fusion 360, WebSockets, GraphQL, Excel, Wix"
     }
   ]
 
@@ -37,16 +37,16 @@
     "tabs": [
       {
 
-        "title": "Degree",
+        "title": "Bachelors",
         "paragraphs": 
         [
-        { "header": "Why BA in Computer Science?", "list":
+        { "header": "Computer Science, but WHY?!", "list":
          [
           "The intelligence revolution will define my generation",
           "If I can understand the complexity of a computer, some day I might understand myself."
 
          ]
-        ,"paragraph": "Is computer science a feat of human genius, or does it naturally emerge from the universe?",
+        ,"paragraph": "Is computer science uniquely human or does it naturally emerge from the universe?",
         "link" : {"type": "doc", "text": "View Unofficial Transcript", "link" : "files/transcript.pdf"}}
 
         ]
@@ -56,9 +56,9 @@
         "title": "Minors",
         "paragraphs": 
         [
-          {"header" : "BET", "paragraph" : "My Business Engineering Technology (BET) minor forces me to collaborate on entreprenuial projects with students across disciplines.",
+          {"header" : "BET minor", "paragraph" : "My Business Engineering Technology (BET) minor forces me to collaborate on entreprenuial projects with students across disciplines.",
         "link":{"type":"url", "text": "What is BET?", "link": "https://eng.auburn.edu/insy/research/twc/bet-program/index.html"}},
-          {"header" : "Math", "paragraph" : "I study mathematics to deepen my understanding of MACHINE LEARNING and PHILOSOPHY! I am on track to double major but have not commited yet."}
+          {"header" : "Math minor", "paragraph" : "I study mathematics to deepen my understanding of MACHINE LEARNING, BIG DATA, and PHILOSOPHY! I am on track to double major but have not commited yet."}
         ]
       },
       {
@@ -81,14 +81,17 @@
         "paragraphs":
         [
           {"header": "Kahua Inc.", "paragraph": "Last summer I worked for a platform software company that builds solutions for construction projects. I worked primarily for the quality assurance team.",
-          "list":["Developed automated testing agents","Wrote internal functions to broaden the testing framework", "Created a developer tool that increased my team’s efficiency by ~30% (Summer Highlight!)", "Operated in a corporate environment"]}
+          "list":["Developed automated testing agents.",
+          "Wrote internal functions to broaden the testing framework.",
+           "Created a developer tool that increased my team’s efficiency by ~30% (Summer Highlight!).",
+            "Operated in a corporate environment."]}
         ] },
       {
         "title": "Research",
         "paragraphs":
         [
           {"paragraph": "I'm building solutions for graduate students pursuing their dissertations."},
-          {"header": "Computer Vision", "paragraph": "For my most recent project I used vision to detect skin conditions. I webscraped a dataset and manual cleaned it, then diluted a public model (EffcientNet) to score our results."},
+          {"header": "Computer Vision", "paragraph": "For my most recent project I used vision to detect skin conditions. I webscraped and cleaned a dataeset, then diluted a public model (EffcientNet) to measure the accuracy of medical diagnoses."},
           {"header": "App Development", "paragraph": "I also developed a therapy mobile app to experiment with generative AI in the realm of human psychology (full stack development)."}
     
         ]  },
@@ -102,7 +105,7 @@
              "Embedded data for rich search results",
               "Dynamically updating featured items",
                "Email subscription automations"
-            ], "link" : {"type": "url", "text": "View Website", "link" : "jupjewels.com"}
+            ], "link" : {"type": "url", "text": "View Website", "link" : "https://jupjewels.com/"}
           }
         ]
 },
@@ -115,7 +118,7 @@
              "Instagram prescence & YouTube advertisements",
              "Managing income & accounting(via Excel and forms)",
              "Counselor outreach, training, & operation",
-             "Organizing & painting jerseys for the campers."
+             "Organizing & painting jerseys for the campers"
           ],
        
           "link":{"type": "url", "text" : "Camp Movie", "link" : "https://youtu.be/GKlthhpZl3U?si=zdTVYFM-E3fBfxow"}},
@@ -133,10 +136,10 @@
       {
         "title": "Programming",
         "paragraphs": [
-        {"header": "Email Bot", "paragraph" : "This managed my BWH Sports camp business email by answering repetitive email questions from the parents. Here's how I set it up:", 
+        {"header": "Email Bot", "paragraph" : "This managed my BWH Sports camp business email by answering repetitive questions from the parents in my inbox. Here's how I set it up:", 
         "list":[
-          "Listen for notification on google cloud",
-          "Determine if message is valid",
+          "Listen for a notification on google cloud",
+          "Determine if question is frequently asked",
            "Inject FAQ into message context", 
            "Generate response using an LLM", 
            "Format email and send"
@@ -144,7 +147,7 @@
         "link": {"type": "url", "text": "View Project", "link":"https://github.com/mackthompson16/EmailBot"}
       },
         {"header": "Social Platform",
-        "paragraph":"I created a calendar-sharing and messaging platform to understand how data is transferred and managed. I created a small API library for my SQL database and used a server for live messaging.",
+        "paragraph":"I created a calendar-sharing and messaging platform to understand how data is transferred and managed. This involved a small API library for my SQL database, a server for live messaging, and a react app.",
           "link": {"type": "url", "text": "View Project", "link":"https://github.com/mackthompson16/WeCal"}
             }
         ]
@@ -153,7 +156,7 @@
        "title": "Writing",
         "paragraphs": 
       [
-        {"header": "EPRIUGBEPIUTBGPEIRGWAWARGEUIRGB", "paragraph": "I had a traumatic head injury (from a charity boxing match) that humilated an invincibility complex I built up. This led me to write profusely about life, death, purpose... a conversation I needed to have with myself. I hope to publish my book by the time I graduate college, but it doesn't matter if no one reads it. It matters to me that I wrote it."},
+        {"header": "EPRIUGBE98348hahhahhahahGBSense from Nonsense", "paragraph": "I had a traumatic head injury (from a charity boxing match) that humilated my pretentious invincibility complex. This led me to write profusely about life, death, purpose... a conversation I needed to have with myself. I hope to publish my book by the time I graduate college, but it doesn't matter if no one reads it. It matters to me."},
         {"header" : "Table of Contents", "paragraph": "", "list" :  ["An Agnostic Framework for the Universe","Navigating Conscious Experience", "Playing Civilization", "A Search for Self"],
         "link" : {"type": "doc","text":"Preview part one", "link" : "files/Part1.pdf"}}
   

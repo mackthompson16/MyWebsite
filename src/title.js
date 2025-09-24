@@ -8,16 +8,17 @@ export default function Header() {
       String.raw`
 Hello, I'm
 
-888b     d888                   888            88888888888 888    888  .d88888b.  888b     d888 8888888b.   .d8888b.   .d88888b.  888b    888
-8888b   d8888                   888                888     888    888 d88P" "Y88b 8888b   d8888 888   Y88b d88P  Y88b d88P" "Y88b 8888b   888
-88888b.d88888                   888                888     888    888 888     888 88888b.d88888 888    888 Y88b.      888     888 88888b  888
-888Y88888P888  8888b.   .d8888b 888  888           888     8888888888 888     888 888Y88888P888 888   d88P  "Y888b.   888     888 888Y88b 888
-888 Y888P 888     "88b d88P"    888 .88P           888     888    888 888     888 888 Y888P 888 8888888P"      "Y88b. 888     888 888 Y88b888
-888  Y8P  888 .d888888 888      888888K            888     888    888 888     888 888  Y8P  888 888              "888 888     888 888  Y88888
-888   "   888 888  888 Y88b.    888 "88b           888     888    888 Y88b. .d88P 888   "   888 888        Y88b  d88P Y88b. .d88P 888   Y8888
-888       888 "Y888888  "Y8888P 888  888           888     888    888  "Y88888P"  888       888 888         "Y8888P"   "Y88888P"  888    Y888
+ooo        ooooo                     oooo             ooooooooooooo oooo
+ 88.       .888                      888              8'   888    8  888
+ 888b     d'888   .oooo.    .ooooo.   888  oooo            888       888 .oo.    .ooooo.  ooo. .oo.  .oo.   oo.ooooo.   .oooo.o  .ooooo.  ooo. .oo.
+ 8 Y88. .P  888   P  )88b  d88'  "Y8  888 .8P'             888       888P Y88b  d88'  88b  888P Y88bP Y88b   888'  88b d88(   8 d88'  88b  888P Y88b
+ 8   888'   888   .oP"888  888        888888.              888       888   888  888   888  888   888   888   888   888  "Y88b.  888   888  888   888
+ 8    Y     888  d8(  888  888   .o8  888  88b.            888       888   888  888   888  888   888   888   888   888 o.  )88b 888   888  888   888  .o. 
+o8o        o888o  Y888""8o  Y8bod8P' o888o o888o          o888o     o888o o888o  Y8bod8P' o888o o888o o888o  888bod8P' 8""888P'  Y8bod8P' o888o o888o Y8P 
+                                                                                                             888                                       '  
+                                                                                                            o888o
 
-                                                                                                                  Here's some stuff about me.
+                                                                                                                                        Here's my shpeel.
 `.replace(/^\n|\n$/g, ""),
     []
   );
@@ -28,16 +29,15 @@ Hello, I'm
       String.raw`
 Hello, I'm
 
-888b     d888                   888 
-8888b   d8888                   888 
-88888b.d88888                   888 
-888Y88888P888  8888b.   .d8888b 888  888
-888 Y888P 888     "88b d88P"    888 .88P
-888  Y8P  888 .d888888 888      888888K 
-888   "   888 888  888 Y88b.    888 "88b
-888       888 "Y888888  "Y8888P 888  888
-
-              Here's some stuff about me.
+ooo        ooooo                     oooo
+ 88.       .888'                      888
+ 888b     d'888   .oooo.    .ooooo.   888  oooo
+ 8 Y88. .P  888   P  )88b  d88'  "Y8  888 .8P
+ 8   888'   888   .oP"888  888        888888
+ 8    Y     888  d8(  888  888   .o8  888  88b.  .o. 
+o8o        o888o  Y888""8o  Y8bod8P' o888o o888o Y8P 
+                                                  ' 
+                                    Here's my shpeel.
 `.replace(/^\n|\n$/g, ""),
     []
   );
@@ -48,7 +48,7 @@ Hello, I'm
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const mq = window.matchMedia("(max-width: 1100px)");
+    const mq = window.matchMedia("(max-width: 1230px)");
 
     const apply = (matches) => {
       setIsMobile(matches);

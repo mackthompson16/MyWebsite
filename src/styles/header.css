@@ -1,9 +1,9 @@
 /* --- Minimal blurred header --- */
 .site-header {
   position: fixed;
-  top: 0; right: 0;
+  top: 0; right: 0; 
   z-index: 1000;
-    width:100vw;
+    min-width:100vw;
   /* frosted-glass */
   background: rgba(0, 0, 0, 0.35);           /* tweak opacity as you like */
   backdrop-filter: blur(12px);
@@ -13,8 +13,8 @@
   align-items: center;
   justify-content: flex-end;
   height: var(--header-height, 64px);
-  box-sizing: border-box;
-  padding: 0 12px;
+
+  padding: 0 24px;
   border: 0;
 }
 
@@ -33,8 +33,8 @@
   .header-tab{
     font-size: 10px;
   }
-.header{ display: flex;
-  align-items: center;
+.header{ 
+  display: flex;
   justify-content: center;
 }
 }
