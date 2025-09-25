@@ -6,7 +6,7 @@
         "title": "Hi!",
         "paragraphs": [
           {"header": "HOMO SAPIEN", "paragraph": "Greetings, my name is Mack. I am a \\b{computer science student} at Auburn University. Lately I've been studying \\b{deep learning} with intent to develop a \\b{market analysis tool}. I am eager to enter the business engineering labor force full time when I graduate in 2027. I have broad experience in \\b{software, research, and entreprenuership}, and a passion for learning new tools and subjects. I am always looking for a new project to work on, so don't hesitate to reach out.",
-          "link" : {"type": "doc", "text": "View Resume", "link" : "public/resume.pdf"}},
+          "link" : {"type": "doc", "text": "View Resume", "link" : "./files/resume.pdf"}},
           {"paragraph" : "send me reels mackthompson16@gmail.com"}
         ]
       },
