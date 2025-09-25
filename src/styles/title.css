@@ -42,4 +42,8 @@
   .px{
     width: 0.75ch;
   }
+  .App-title{
+    margin-left: 15vw;
+  }
 }
+

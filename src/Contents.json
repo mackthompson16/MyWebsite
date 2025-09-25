@@ -6,7 +6,7 @@
         "title": "Hi!",
         "paragraphs": [
           {"header": "HOMO SAPIEN", "paragraph": "Atlanta & Auburn; computer science; machine learning; data; curiously passionate; passionately curious; chill guy; mad lad; 6 7.",
-          "link" : {"type": "doc", "text": "View Resume", "link" : "files/resume.pdf"}},
+          "link" : {"type": "doc", "text": "View Resume", "link" : "./files/resume.pdf"}},
           {"paragraph" : "Please reach out mackthompson16@gmail.com"}
         ]
       },
@@ -47,7 +47,7 @@
 
          ]
         ,"paragraph": "Is computer science uniquely human or does it naturally emerge from the universe?",
-        "link" : {"type": "doc", "text": "View Unofficial Transcript", "link" : "files/transcript.pdf"}}
+        "link" : {"type": "doc", "text": "View Unofficial Transcript", "link" : "./files/transcript.pdf"}}
 
         ]
         
@@ -91,7 +91,7 @@
         "paragraphs":
         [
           {"paragraph": "I'm building solutions for graduate students pursuing their dissertations."},
-          {"header": "Computer Vision", "paragraph": "For my most recent project I used vision to detect skin conditions. I webscraped and cleaned a dataeset, then diluted a public model (EffcientNet) to measure the accuracy of medical diagnoses."},
+          {"header": "Computer Vision", "paragraph": "For my most recent project I used vision to detect skin conditions. I webscraped and cleaned a dataset, then diluted a public model (EffcientNet) to measure the accuracy of medical diagnoses."},
           {"header": "App Development", "paragraph": "I also developed a therapy mobile app to experiment with generative AI in the realm of human psychology (full stack development)."}
     
         ]  },

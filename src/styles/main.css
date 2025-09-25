@@ -27,6 +27,7 @@ html, body {
   height: 100%;
   margin: 0;         /* remove UA margins */
   padding: 0;
+  
 }
 
 #root, .App {
@@ -58,7 +59,7 @@ html, body {
   /* Center content and keep your theme vars */
   background: transparent;
   color: var(--retro-text);
-
+  width: 100%;
   --panel-bg: var(--retro-bg);
   margin-bottom: 15vh;
   /* Optional: if you want some breathing room around the whole thing */
@@ -115,4 +116,9 @@ html, body {
   }
   .index-3{
     height:575px;
+  }
+
+  .footer{
+    font-size: 15px;
+    align-self: center;
   }
