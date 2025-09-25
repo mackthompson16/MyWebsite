@@ -99,6 +99,7 @@
 .paragraph-text strong,.paragraph-sublist strong { font-weight: 700; color: var(--retro-green); }
 .paragraph-text em     { font-style: italic; color: var(--retro-green-dark); }
 .paragraph-sublist{
+  margin-bottom:10px;
   text-align: left;
 }
 
