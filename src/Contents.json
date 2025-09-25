@@ -5,9 +5,9 @@
       [{
         "title": "Hi!",
         "paragraphs": [
-          {"header": "HOMO SAPIEN", "paragraph": "Atlanta & Auburn; computer science; machine learning; data; curiously passionate; passionately curious; chill guy; mad lad; 6 7.",
-          "link" : {"type": "doc", "text": "View Resume", "link" : "./files/resume.pdf"}},
-          {"paragraph" : "Please reach out mackthompson16@gmail.com"}
+          {"header": "HOMO SAPIEN", "paragraph": "Greetings, my name is Mack. I am a \\b{computer science student} at Auburn University. Lately I've been studying \\b{deep learning} with intent to develop a \\b{market analysis tool}. I am excited to enter the labor force of business engineering when I graduate in 2027. I have broad experience in \\b{software, research, and entreprenuership} which portray my passion for learning. I am always looking for a new project to work on, so don't hesitate to reach out.",
+          "link" : {"type": "doc", "text": "View Resume", "link" : "public/resume.pdf"}},
+          {"paragraph" : "send me reels mackthompson16@gmail.com"}
         ]
       },
       {
@@ -42,12 +42,11 @@
         [
         { "header": "Computer Science, but WHY?!", "list":
          [
-          "The intelligence revolution will define my generation",
-          "If I can understand the complexity of a computer, some day I might understand myself."
+          "The \\b{intelligence revolution} will define my generation",
+          "If I can understand the complexity of a computer, some day \\b{I might} understand myself."
 
          ]
-        ,"paragraph": "Is computer science uniquely human or does it naturally emerge from the universe?",
-        "link" : {"type": "doc", "text": "View Unofficial Transcript", "link" : "./files/transcript.pdf"}}
+        ,"link" : {"type": "doc", "text": "View Unofficial Transcript", "link" : "./files/transcript.pdf"}}
 
         ]
         
@@ -56,18 +55,18 @@
         "title": "Minors",
         "paragraphs": 
         [
-          {"header" : "BET minor", "paragraph" : "My Business Engineering Technology (BET) minor forces me to collaborate on entreprenuial projects with students across disciplines.",
+          {"header" : "BET minor", "paragraph" : "My Business Engineering Technology (BET) minor forces me to collaborate on \\b{entreprenuial projects} with students \\b{across disciplines}.",
         "link":{"type":"url", "text": "What is BET?", "link": "https://eng.auburn.edu/insy/research/twc/bet-program/index.html"}},
-          {"header" : "Math minor", "paragraph" : "I study mathematics to deepen my understanding of MACHINE LEARNING, BIG DATA, and PHILOSOPHY! I am on track to double major but have not commited yet."}
+          {"header" : "Math minor", "paragraph" : "I study mathematics to deepen my understanding of \\b{machine learning, big data, and philosophy!} I am on track to \\b{double major} but have not commited yet."}
         ]
       },
       {
         "title": "Involvment",
         "paragraphs":
         [
-          {"header": "Competitive Programming", "paragraph": "Each year I travel with Auburn's team to compete in ICPC. We have meetings weekly and mock competitions monthly. I took home a medal in 2024!"},
+          {"header": "Competitive Programming", "paragraph": "Each year I travel with Auburn's team to compete in \\b{ICPC}. We have meetings weekly and mock competitions monthly. I took home a \\b{medal} in 2024!"},
           {"header": "Lambda Chi Alpha", "paragraph": "My fraternity helps me socialize and let off steam. I try to have the new CSSE members come to ICPC with me."},
-          {"header": "STARS Computing Core", "paragraph": "Stars is a computing outreach program for K-12. I've made presentations for highschool classes and run tables at college day."}
+          {"header": "STARS Computing Core", "paragraph": "Stars is a computing \\b{outreach program} for K-12. I've made presentations for highschool classes and run tables at college day."}
         ]
          
       }
@@ -80,10 +79,10 @@
         "title": "Software",
         "paragraphs":
         [
-          {"header": "Kahua Inc.", "paragraph": "Last summer I worked for a platform software company that builds solutions for construction projects. I worked primarily for the quality assurance team.",
-          "list":["Developed automated testing agents.",
-          "Wrote internal functions to broaden the testing framework.",
-           "Created a developer tool that increased my team’s efficiency by ~30% (Summer Highlight!).",
+          {"header": "Kahua Inc.", "paragraph": "Last summer I had the privilige to work for a groundbreaking \\b{platform software} company that builds novel solutions for construction projects. I worked primarily for the \\b{quality assurance team}.",
+          "list":["Developed \\b{automated testing agents.}",
+          "Wrote \\b{internal functions} to broaden the testing framework.",
+           "Created a developer tool that \\b{increased my team’s efficiency by ~30%.}",
             "Operated in a corporate environment."]}
         ] },
       {
@@ -91,19 +90,19 @@
         "paragraphs":
         [
           {"paragraph": "I'm building solutions for graduate students pursuing their dissertations."},
-          {"header": "Computer Vision", "paragraph": "For my most recent project I used vision to detect skin conditions. I webscraped and cleaned a dataset, then diluted a public model (EffcientNet) to measure the accuracy of medical diagnoses."},
-          {"header": "App Development", "paragraph": "I also developed a therapy mobile app to experiment with generative AI in the realm of human psychology (full stack development)."}
+          {"header": "Computer Vision", "paragraph": "For my most recent project I used vision to detect skin conditions. I \\b{webscraped} and cleaned a dataset, then \\b{diluted a public model} (EffcientNet) to measure the accuracy of medical diagnoses."},
+          {"header": "App Development", "paragraph": "I also developed a therapy mobile app to experiment with \\b{generative AI} in the realm of human psychology (full stack development)."}
     
         ]  },
       {
         "title": "Freelance",
         "paragraphs": [
-            {"header": "JupJewels.com", "paragraph":"I created a website for a local company, JupJewels, with lots of custom features, communicating directly with the client:",
+            {"header": "JupJewels.com", "paragraph":"I created a website for a local company, JupJewels, with lots of custom features, communicating \\b{directly with the client}:",
             "list":
              [
-             "A DIY jewelry-canvas page",
-             "Embedded data for rich search results",
-              "Dynamically updating featured items",
+             "A DIY \\b{jewelry-canvas page}",
+             "Embedded data for \\b{rich search results}",
+              "\\b{Dynamically updating} featured items",
                "Email subscription automations"
             ], "link" : {"type": "url", "text": "View Website", "link" : "https://jupjewels.com/"}
           }
@@ -112,11 +111,11 @@
       {
         "title": "Owner",
         "paragraphs": [
-          {"header": "BWH SPORTS CAMP", "paragraph" : "I founded this company in highschool. During our peak, we took around 55 kids for four weeklong sessions. The estimated gross revenue over 4 years was over $100,000."},
+          {"header": "BWH SPORTS CAMP", "paragraph" : "I founded this company in highschool. During our peak, we took around \\b{55 kids} for \\b{four weeklong sessions}. The estimated \\b{profit} over 4 years was over \\b{$100,000}."},
           {"paragraph":"I learned a lot:", "list": [
             
-             "Instagram prescence & YouTube advertisements",
-             "Managing income & accounting(via Excel and forms)",
+             "Instagram prescence & \\b{YouTube advertisements}",
+             "\\b{Finance & accounting}(via Excel and forms)",
              "Counselor outreach, training, & operation",
              "Organizing & painting jerseys for the campers"
           ],
@@ -136,18 +135,18 @@
       {
         "title": "Programming",
         "paragraphs": [
-        {"header": "Email Bot", "paragraph" : "This managed my BWH Sports camp business email by answering repetitive questions from the parents in my inbox. Here's how I set it up:", 
+        {"header": "Email Bot", "paragraph" : "This managed my \\b{BWH Sports Camp} business email by answering repetitive questions from the parents in my inbox. Here's how I set it up:", 
         "list":[
-          "Listen for a notification on the cloud",
+          "Listen for a notification on \\b{the cloud}",
           "Determine if question is frequently asked",
-           "Inject pre-built answers into message context", 
-           "Generate response using an LLM", 
+           "\\b{Inject} pre-built answers into message \\b{context}", 
+           "Generate response using an \\b{LLM}", 
            "Format email and send"
           ],
         "link": {"type": "url", "text": "View Project", "link":"https://github.com/mackthompson16/EmailBot"}
       },
         {"header": "Social Platform",
-        "paragraph":"I created a calendar-sharing and messaging platform to understand how data is transferred and managed. This involved a small API library for my SQL database, a server for live messaging, and a react app.",
+        "paragraph":"I created a calendar-sharing and messaging platform to understand how \\b{data} is transferred and managed. This involved a small \\b{API library}, a \\b{server} for live messaging, and a \\b{react app}.",
           "link": {"type": "url", "text": "View Project", "link":"https://github.com/mackthompson16/WeCal"}
             }
         ]
@@ -156,7 +155,7 @@
        "title": "Writing",
         "paragraphs": 
       [
-        {"header": "EPRIUGBE98348hahhahhahahGBSense from Nonsense", "paragraph": "I had a traumatic head injury (from a charity boxing match) that humilated my pretentious invincibility complex. This led me to write profusely about life, death, purpose... a conversation I needed to have with myself. I hope to publish my book by the time I graduate college, but it doesn't matter if no one reads it. It matters to me."},
+        {"header": "EPRIUGBE98348hahhahhahahGBSense from Nonsense", "paragraph": "I had a \\b{traumatic head injury} (from a charity boxing match) that humilated my \\b{pretentious invincibility complex}. This led me to write profusely about \\b{life, death, purpose...} a conversation I needed to have with myself. I hope to publish my book by the time I graduate college, but it doesn't matter if no one reads it. \\b{It matters to me.}"},
         {"header" : "Table of Contents", "paragraph": "", "list" :  ["An Agnostic Framework for the Universe","Navigating Conscious Experience", "Playing Civilization", "A Search for Self"],
         "link" : {"type": "doc","text":"Preview part one", "link" : "files/Part1.pdf"}}
   

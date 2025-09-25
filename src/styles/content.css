@@ -21,6 +21,7 @@
   background: transparent;
 }
 .folder-tab{
+  flex: 0 0 auto; 
     align-self: flex-start;
     font-size: 25px;
 }
@@ -37,13 +38,15 @@
 }
 
 /* (unchanged) */
-/* Your existing list styles */
+
 .paragraphs-list {
+  font-size: 20px;
   list-style: none;
+  line-height:1;
   padding: 0;
   width: min(100%, 60ch);
   text-align: justify;
-  text-justify: inter-word;
+  text-justify: flex-start;
   text-align-last: left;
   margin: 0;
 }
@@ -83,7 +86,7 @@
 
 /* (unchanged) */
 .paragraph-header {
-  text-align: justify;
+  text-align: left;
   font-weight: bold;
   color: var(--retro-green);
 }
@@ -93,14 +96,25 @@
   line-height: 1;
   text-shadow: 0 0 3px var(--retro-glow-light);
 }
+.paragraph-text strong,.paragraph-sublist strong { font-weight: 700; color: var(--retro-green); }
+.paragraph-text em     { font-style: italic; color: var(--retro-green-dark); }
+.paragraph-sublist{
+  text-align: left;
+}
 
 .link {
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
   color: var(--retro-green, #00ff00);
   text-decoration: none;
 }
 
 @media (min-width: 721px){
-
+.paragraph-text{
+  font-size:20px;
+}
 .folder-tabs {
   flex: 0 0 240px;          /* fixed left column */
  align-self: center;   /* don't stretch vertically */

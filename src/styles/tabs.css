@@ -76,7 +76,9 @@
    .tab-arrow { display: none; }
   /* optional wrapper if you have one
      .site-footer { margin-top: 2rem; } */
-
+.retro-tab{
+  font-size: 15px;
+}
   .left-tabs,
   .right-tabs {
     position: static;              /* not fixed */
