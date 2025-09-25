@@ -3,7 +3,7 @@
   position: fixed;
   top: 0; right: 0; 
   z-index: 1000;
-    min-width:100vw;
+    min-width:140vw;
   /* frosted-glass */
   background: rgba(0, 0, 0, 0.35);           /* tweak opacity as you like */
   backdrop-filter: blur(12px);
