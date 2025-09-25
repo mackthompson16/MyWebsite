@@ -30,7 +30,11 @@
  }
 
 @media (max-width: 720px) {
+  .site-header{
+    display:none;
+  }
   .header-tab{
+
     font-size: 10px;
   }
 .header{ 

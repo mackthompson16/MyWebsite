@@ -5,7 +5,7 @@
       [{
         "title": "Hi!",
         "paragraphs": [
-          {"header": "HOMO SAPIEN", "paragraph": "Greetings, my name is Mack. I am a \\b{computer science student} at Auburn University. Lately I've been studying \\b{deep learning} with intent to develop a \\b{market analysis tool}. I am excited to enter the labor force of business engineering when I graduate in 2027. I have broad experience in \\b{software, research, and entreprenuership} which portray my passion for learning. I am always looking for a new project to work on, so don't hesitate to reach out.",
+          {"header": "HOMO SAPIEN", "paragraph": "Greetings, my name is Mack. I am a \\b{computer science student} at Auburn University. Lately I've been studying \\b{deep learning} with intent to develop a \\b{market analysis tool}. I am eager to enter the business engineering labor force full time when I graduate in 2027. I have broad experience in \\b{software, research, and entreprenuership}, and a passion for learning new tools and subjects. I am always looking for a new project to work on, so don't hesitate to reach out.",
           "link" : {"type": "doc", "text": "View Resume", "link" : "public/resume.pdf"}},
           {"paragraph" : "send me reels mackthompson16@gmail.com"}
         ]
@@ -16,16 +16,16 @@
   "paragraphs": [
     {
       "header": "Languages",
-      "paragraph": "Python, Java, C#, JavaScript, TypeScript, HTML/CSS, SQL, Ruby, MIPS Assembly"
+      "paragraph": "\\b{Python}, Java, C#, \\b{JavaScript}, TypeScript, HTML/CSS, SQL, Ruby, MIPS Assembly"
     },
     {
       "header": "Frameworks & Libraries",
       "paragraph": 
-        "React, Next.js, Node.js, Tailwind, CSS, Pandas, NumPy, PyTorch, TensorFlow, Selenium, OpenAI, SDK, NUnit, WinAppDriver"   
+        "\\b{React}, Next.js, \\b{Node.js}, Tailwind, CSS, Pandas, NumPy, \\b{PyTorch}, TensorFlow, \\b{Selenium}, OpenAI, SDK, NUnit, WinAppDriver"   
     },
     {
       "header": "Platforms",
-      "paragraph": "Google Cloud Platform, AWS, Firebase, Shopify (Liquid), Git/GitHub, AZDO, Adobe Premiere Pro, Adobe Photoshop, Autodesk Fusion 360, WebSockets, GraphQL, Excel, Wix"
+      "paragraph": "Google Cloud, \\b{AWS}, Firebase, \\b{Shopify}, Git/GitHub, \\b{AZDO}, Adobe Premiere Pro, Adobe Photoshop, Autodesk Fusion 360, WebSockets, GraphQL, Excel, Wix"
     }
   ]
 
@@ -40,11 +40,11 @@
         "title": "Bachelors",
         "paragraphs": 
         [
-        { "header": "Computer Science, but WHY?!", "list":
+        { "header": "Computer Science, but WHY?!", "paragraph":"I naturally gravitated to tech because its \\b{attractive to the curious mind}. Of course it's also an \\b{economic} choice, but I like to tell myself its the most \\b{wonderful career} because the future is always \\b{unknown}.","list":
          [
-          "The \\b{intelligence revolution} will define my generation",
-          "If I can understand the complexity of a computer, some day \\b{I might} understand myself."
-
+          "The \\b{intelligence revolution} will define my generation.",
+          "If I can understand the complexity of a computer, some day \\b{I might} understand myself.",
+          "ChatGPT is my therapist (I probabily need a \\b{human girlfriend})."
          ]
         ,"link" : {"type": "doc", "text": "View Unofficial Transcript", "link" : "./files/transcript.pdf"}}
 
