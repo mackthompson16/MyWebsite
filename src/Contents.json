@@ -40,7 +40,7 @@
         "title": "Bachelors",
         "paragraphs": 
         [
-        { "header": "Computer Science, but WHY?!", "paragraph":"I naturally gravitated to tech because its \\b{attractive to the curious mind}. Of course it's also an \\b{economic} choice, but it's also the most \\b{wonderful career} because the future is always \\b{unknown}.","list":
+        { "header": "Computer Science, but WHY?!", "paragraph":"I naturally gravitated to tech because its \\b{attractive to the curious mind}. Of course it's an \\b{economic} choice, but perhaps it's the most \\b{wonderful career} because the future is always \\b{unknown}.","list":
          [
           "The \\b{intelligence revolution} will define my generation.",
           "If I can understand the complexity of a computer, some day \\b{I might} understand myself.",
@@ -91,7 +91,7 @@
         [
           {"paragraph": "I'm building solutions for graduate students pursuing their dissertations."},
           {"header": "Computer Vision", "paragraph": "For my most recent project I used vision to detect skin conditions. I \\b{webscraped} and cleaned a dataset, then \\b{diluted a public model} (EffcientNet) to measure the accuracy of medical diagnoses."},
-          {"header": "App Development", "paragraph": "I also developed a therapy mobile app to experiment with \\b{generative AI} in the realm of human psychology (full stack development)."}
+          {"header": "App Development", "paragraph": "I also developed a mobile therapy app to experiment with \\b{generative AI} in the realm of human psychology (full stack development)."}
     
         ]  },
       {
